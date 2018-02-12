@@ -1,0 +1,6 @@
+framework module Pods_BoozeNation {
+  umbrella header "Pods-BoozeNation-umbrella.h"
+
+  export *
+  module * { export * }
+}

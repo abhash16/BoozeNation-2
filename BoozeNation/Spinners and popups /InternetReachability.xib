@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InternetReachability" customModule="BoozeNation" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="IRView" customModule="BoozeNation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NrJ-wC-aGf">
+                    <rect key="frame" x="55" y="260" width="265" height="147"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mji-id-pet">
+                            <rect key="frame" x="78" y="108" width="149" height="19"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="mji-id-pet" secondAttribute="height" multiplier="149:19" id="TZs-dx-5D7"/>
+                            </constraints>
+                            <string key="text">Waiting To Reconnect ..		</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boozie_no_internet" translatesAutoresizingMaskIntoConstraints="NO" id="JWB-n2-oyp">
+                            <rect key="frame" x="89" y="8" width="87" height="73"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="JWB-n2-oyp" secondAttribute="height" multiplier="87:73" id="sVl-w3-A72"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGu-j0-PFX">
+                            <rect key="frame" x="46" y="105" width="24" height="24"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Have Lost Internet Connevtivity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ah-Z0-cIV">
+                            <rect key="frame" x="8" y="80" width="249" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="29" id="KOE-GD-IIZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="mji-id-pet" secondAttribute="bottom" constant="20" id="01H-XK-bb4"/>
+                        <constraint firstAttribute="bottom" secondItem="UGu-j0-PFX" secondAttribute="bottom" constant="18" id="0fP-Nm-OFz"/>
+                        <constraint firstAttribute="trailing" secondItem="9ah-Z0-cIV" secondAttribute="trailing" constant="8" id="0wX-IN-3B2"/>
+                        <constraint firstItem="UGu-j0-PFX" firstAttribute="top" secondItem="NrJ-wC-aGf" secondAttribute="top" constant="105" id="1dy-i2-55m"/>
+                        <constraint firstAttribute="trailing" secondItem="mji-id-pet" secondAttribute="trailing" constant="38" id="HHr-Oy-htL"/>
+                        <constraint firstItem="9ah-Z0-cIV" firstAttribute="leading" secondItem="NrJ-wC-aGf" secondAttribute="leading" constant="8" id="T2O-5S-2wx"/>
+                        <constraint firstItem="UGu-j0-PFX" firstAttribute="leading" secondItem="NrJ-wC-aGf" secondAttribute="leading" constant="46" id="TVT-el-hX1"/>
+                        <constraint firstItem="JWB-n2-oyp" firstAttribute="top" secondItem="NrJ-wC-aGf" secondAttribute="top" constant="8" id="X6l-3v-dgq"/>
+                        <constraint firstAttribute="width" constant="265" id="aaf-2E-uzJ"/>
+                        <constraint firstAttribute="trailing" secondItem="JWB-n2-oyp" secondAttribute="trailing" constant="89" id="evV-Ze-hxQ"/>
+                        <constraint firstItem="mji-id-pet" firstAttribute="leading" secondItem="UGu-j0-PFX" secondAttribute="trailing" constant="8" id="gFr-Dz-1Fe"/>
+                        <constraint firstItem="JWB-n2-oyp" firstAttribute="leading" secondItem="NrJ-wC-aGf" secondAttribute="leading" constant="89" id="nTt-Kr-ewv"/>
+                        <constraint firstItem="mji-id-pet" firstAttribute="top" secondItem="JWB-n2-oyp" secondAttribute="bottom" constant="27" id="udH-Sd-9TV"/>
+                        <constraint firstItem="9ah-Z0-cIV" firstAttribute="top" secondItem="NrJ-wC-aGf" secondAttribute="top" constant="80" id="uqP-cq-adf"/>
+                        <constraint firstAttribute="height" constant="147" id="uzn-mh-CNz"/>
+                        <constraint firstAttribute="width" secondItem="NrJ-wC-aGf" secondAttribute="height" multiplier="265:147" id="xqe-nT-ev6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NrJ-wC-aGf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8C8-Jd-oow"/>
+                <constraint firstItem="NrJ-wC-aGf" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="UXL-Re-voH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <connections>
+                <outlet property="_connectionView" destination="NrJ-wC-aGf" id="9fX-lg-kPb"/>
+                <outlet property="_golgolView" destination="UGu-j0-PFX" id="3L0-rB-JyX"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="boozie_no_internet" width="368" height="313"/>
+    </resources>
+</document>

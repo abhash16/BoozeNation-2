@@ -1,0 +1,1665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0030A1F71F500A73006CA8F9 /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 0030A1F51F500A73006CA8F9 /* checked.png */; };
+		0030A1FA1F500C83006CA8F9 /* UpdateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0030A1F91F500C83006CA8F9 /* UpdateProfileViewController.swift */; };
+		0030A2011F5029FF006CA8F9 /* dotuncheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 0030A1FF1F5029FF006CA8F9 /* dotuncheck.png */; };
+		0030A2021F5029FF006CA8F9 /* dotcheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 0030A2001F5029FF006CA8F9 /* dotcheck.png */; };
+		0030A2221F507724006CA8F9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0030A2211F507724006CA8F9 /* HomeViewController.swift */; };
+		003C71B71F8D527100C4C761 /* MenuSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C71B61F8D527100C4C761 /* MenuSlider.swift */; };
+		004B25091F4DA77900BD3FF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004B25081F4DA77900BD3FF7 /* AppDelegate.swift */; };
+		004B25101F4DA77900BD3FF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 004B250F1F4DA77900BD3FF7 /* Assets.xcassets */; };
+		004B25131F4DA77900BD3FF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004B25111F4DA77900BD3FF7 /* LaunchScreen.storyboard */; };
+		004B251E1F4DA77900BD3FF7 /* BoozeNationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004B251D1F4DA77900BD3FF7 /* BoozeNationTests.swift */; };
+		004B25291F4DA77900BD3FF7 /* BoozeNationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004B25281F4DA77900BD3FF7 /* BoozeNationUITests.swift */; };
+		00847C651F52139D00DE36C0 /* addSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00847C641F52139D00DE36C0 /* addSlider.xib */; };
+		00847C671F5213AC00DE36C0 /* ShelfSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00847C661F5213AC00DE36C0 /* ShelfSlider.swift */; };
+		009CD5091FFBAF7900DF7106 /* GiftSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009CD5081FFBAF7900DF7106 /* GiftSendViewController.swift */; };
+		009CD50B1FFBAF7900DF7106 /* GiftSendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009CD50A1FFBAF7900DF7106 /* GiftSendViewController.xib */; };
+		00A1263C1F4FE3850039869A /* signingoogle.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A1263B1F4FE3850039869A /* signingoogle.png */; };
+		00A1263E1F4FE5C40039869A /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1263D1F4FE5C40039869A /* loginViewController.swift */; };
+		00A6CAD51F7E2F7E0001DAAC /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A6CAD41F7E2F7D0001DAAC /* CartViewController.swift */; };
+		00F6AFE71F911B0300236B3A /* source.gif in Resources */ = {isa = PBXBuildFile; fileRef = 00F6AFC41F8FF1D100236B3A /* source.gif */; };
+		08027F47202C683200E1D493 /* TransactionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08027F46202C683200E1D493 /* TransactionDetail.swift */; };
+		08027F54202DC6CF00E1D493 /* WalkThroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08027F52202DC6CE00E1D493 /* WalkThroughViewController.swift */; };
+		08027F55202DC6CF00E1D493 /* WalkThroughCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08027F53202DC6CE00E1D493 /* WalkThroughCollectionViewCell.swift */; };
+		08027F59202DC71600E1D493 /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08027F56202DC71600E1D493 /* UPCarouselFlowLayout.swift */; };
+		085CA9FA201D0925008BA020 /* Canvas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085CA9DE201CFEB5008BA020 /* Canvas.framework */; };
+		08745CA2202F601D00479EFF /* FinalPayU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08745CA1202F601D00479EFF /* FinalPayU.swift */; };
+		08745D1F202F606E00479EFF /* PUCBApproveView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08745CA5202F606D00479EFF /* PUCBApproveView.xib */; };
+		08745D20202F606E00479EFF /* PUCBPassowrdWithIncorrectOTPView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08745CA6202F606D00479EFF /* PUCBPassowrdWithIncorrectOTPView.xib */; };
+		08745D21202F606E00479EFF /* PUCBFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08745CA7202F606D00479EFF /* PUCBFooterView.xib */; };
+		08745D22202F606E00479EFF /* PUCBUserIdNB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08745CA8202F606D00479EFF /* PUCBUserIdNB.xib */; };
+		08745D23202F606E00479EFF /* PayUCBInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08745CA9202F606D00479EFF /* PayUCBInfo.plist */; };
+		08745D24202F606E00479EFF /* PUCBRegisterOption.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08745CAA202F606D00479EFF /* PUCBRegisterOption.xib */; };
+		08745D25202F606E00479EFF /* PUCBReviewOrderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08745CB1202F606D00479EFF /* PUCBReviewOrderView.xib */; };
+		08745D26202F606E00479EFF /* PUCBAllPaymentOption.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08745CB2202F606D00479EFF /* PUCBAllPaymentOption.xib */; };
+		08745D27202F606E00479EFF /* PUCBROCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08745CB3202F606D00479EFF /* PUCBROCell.xib */; };
+		08745D28202F606E00479EFF /* PUCBImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08745CB4202F606D00479EFF /* PUCBImages.xcassets */; };
+		08745D29202F606E00479EFF /* PUCBLoader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08745CB5202F606D00479EFF /* PUCBLoader.xib */; };
+		08745D2A202F606E00479EFF /* PUCBBankPageLoading.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08745CB7202F606D00479EFF /* PUCBBankPageLoading.xib */; };
+		08745D2B202F606E00479EFF /* PUCBPasswordNB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08745CB8202F606D00479EFF /* PUCBPasswordNB.xib */; };
+		08745D2C202F606E00479EFF /* PUCBHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08745CB9202F606D00479EFF /* PUCBHeaderView.xib */; };
+		08745D2D202F606E00479EFF /* PUCBSurePay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08745CBA202F606D00479EFF /* PUCBSurePay.xib */; };
+		08745D2E202F606E00479EFF /* PUCBRegenerateOTPView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08745CBD202F606D00479EFF /* PUCBRegenerateOTPView.xib */; };
+		08745D2F202F606E00479EFF /* PUCBWKTest.html in Resources */ = {isa = PBXBuildFile; fileRef = 08745CBE202F606D00479EFF /* PUCBWKTest.html */; };
+		08745D30202F606E00479EFF /* PUUIMainStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08745CC2202F606D00479EFF /* PUUIMainStoryBoard.storyboard */; };
+		08745D31202F606E00479EFF /* iOSDefaultActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 08745CC5202F606D00479EFF /* iOSDefaultActivityIndicator.m */; };
+		08745D32202F606E00479EFF /* PUUICCDCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 08745CC9202F606D00479EFF /* PUUICCDCVC.m */; };
+		08745D33202F606E00479EFF /* PUUIBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 08745CCC202F606D00479EFF /* PUUIBaseVC.m */; };
+		08745D34202F606E00479EFF /* PUUIWrapperKHTabPagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 08745CCE202F606D00479EFF /* PUUIWrapperKHTabPagerVC.m */; };
+		08745D35202F606E00479EFF /* PUUITabBarTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08745CD0202F606D00479EFF /* PUUITabBarTopView.m */; };
+		08745D36202F606E00479EFF /* PUUIWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 08745CD2202F606D00479EFF /* PUUIWebViewVC.m */; };
+		08745D37202F606E00479EFF /* PUUICardOptionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 08745CD4202F606D00479EFF /* PUUICardOptionVC.m */; };
+		08745D38202F606E00479EFF /* PUUIPaymentOptionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 08745CD5202F606D00479EFF /* PUUIPaymentOptionVC.m */; };
+		08745D39202F606E00479EFF /* PUUITabBarTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08745CD7202F606D00479EFF /* PUUITabBarTopView.xib */; };
+		08745D3A202F606E00479EFF /* PUUINBVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 08745CD8202F606D00479EFF /* PUUINBVC.m */; };
+		08745D3B202F606E00479EFF /* PUUIPayUMoneyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 08745CDA202F606D00479EFF /* PUUIPayUMoneyVC.m */; };
+		08745D3C202F606E00479EFF /* PUUIStoredCardCarouselVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 08745CDB202F606D00479EFF /* PUUIStoredCardCarouselVC.m */; };
+		08745D3D202F606E00479EFF /* PUUIAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08745CDD202F606D00479EFF /* PUUIAssets.xcassets */; };
+		08745D3E202F606E00479EFF /* PUUIStoredCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08745CDF202F606D00479EFF /* PUUIStoredCardView.m */; };
+		08745D3F202F606E00479EFF /* PUUIEMITopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08745CE3202F606D00479EFF /* PUUIEMITopView.xib */; };
+		08745D40202F606E00479EFF /* PUUINBTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08745CE4202F606D00479EFF /* PUUINBTopView.m */; };
+		08745D41202F606E00479EFF /* PUUIEMITopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08745CE5202F606D00479EFF /* PUUIEMITopView.m */; };
+		08745D42202F606E00479EFF /* PUUIStoredCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08745CE6202F606D00479EFF /* PUUIStoredCardView.xib */; };
+		08745D43202F606E00479EFF /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 08745CEA202F606D00479EFF /* iCarousel.m */; };
+		08745D44202F606E00479EFF /* PUUIConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 08745CED202F606D00479EFF /* PUUIConstants.m */; };
+		08745D45202F606E00479EFF /* PUUIImageConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 08745CEE202F606D00479EFF /* PUUIImageConstants.m */; };
+		08745D46202F606E00479EFF /* PUUIUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 08745CF0202F606D00479EFF /* PUUIUtility.m */; };
+		08745D47202F606E00479EFF /* KHTabPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08745CF3202F606D00479EFF /* KHTabPagerViewController.m */; };
+		08745D48202F606E00479EFF /* KHTabScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08745CF4202F606D00479EFF /* KHTabScrollView.m */; };
+		08745D49202F606E00479EFF /* PUUIReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 08745CF9202F606D00479EFF /* PUUIReachability.m */; };
+		08745D4A202F606E00479EFF /* UIColor+PUUIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 08745CFC202F606D00479EFF /* UIColor+PUUIColor.m */; };
+		08745D4B202F606E00479EFF /* libPayU_iOS_CoreSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08745CFE202F606D00479EFF /* libPayU_iOS_CoreSDK.a */; };
+		08745D4C202F606E00479EFF /* PayUSDKInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08745D12202F606E00479EFF /* PayUSDKInfo.plist */; };
+		08745D4D202F606E00479EFF /* libiOSCustomBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08745D1D202F606E00479EFF /* libiOSCustomBrowser.a */; };
+		089922C71F4DC7E900FC9492 /* 100pipers-whiskey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 089922A51F4DC7E900FC9492 /* 100pipers-whiskey.jpg */; };
+		089922C81F4DC7E900FC9492 /* absolut-vodka.png in Resources */ = {isa = PBXBuildFile; fileRef = 089922A61F4DC7E900FC9492 /* absolut-vodka.png */; };
+		089922C91F4DC7E900FC9492 /* banner_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 089922A71F4DC7E900FC9492 /* banner_1.jpg */; };
+		089922CA1F4DC7E900FC9492 /* beer.png in Resources */ = {isa = PBXBuildFile; fileRef = 089922A81F4DC7E900FC9492 /* beer.png */; };
+		089922CB1F4DC7E900FC9492 /* Bira.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 089922A91F4DC7E900FC9492 /* Bira.jpg */; };
+		089922CC1F4DC7E900FC9492 /* blackdog-whiskey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 089922AA1F4DC7E900FC9492 /* blackdog-whiskey.jpg */; };
+		089922CE1F4DC7E900FC9492 /* budweiser.png in Resources */ = {isa = PBXBuildFile; fileRef = 089922AC1F4DC7E900FC9492 /* budweiser.png */; };
+		089922CF1F4DC7E900FC9492 /* bz_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 089922AD1F4DC7E900FC9492 /* bz_logo.png */; };
+		089922D01F4DC7E900FC9492 /* captainmorgan.png in Resources */ = {isa = PBXBuildFile; fileRef = 089922AE1F4DC7E900FC9492 /* captainmorgan.png */; };
+		089922D11F4DC7E900FC9492 /* chivasregal-whiskey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 089922AF1F4DC7E900FC9492 /* chivasregal-whiskey.jpg */; };
+		089922D21F4DC7E900FC9492 /* heineken.png in Resources */ = {isa = PBXBuildFile; fileRef = 089922B01F4DC7E900FC9492 /* heineken.png */; };
+		089922D31F4DC7E900FC9492 /* ic_account_circle_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 089922B11F4DC7E900FC9492 /* ic_account_circle_black_24dp.png */; };
+		089922D41F4DC7E900FC9492 /* ic_add_circle_outline_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 089922B21F4DC7E900FC9492 /* ic_add_circle_outline_black.png */; };
+		089922D51F4DC7E900FC9492 /* ic_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 089922B31F4DC7E900FC9492 /* ic_bar.png */; };
+		089922D61F4DC7E900FC9492 /* ic_email_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 089922B41F4DC7E900FC9492 /* ic_email_black_24dp.png */; };
+		089922D71F4DC7E900FC9492 /* ic_home_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 089922B51F4DC7E900FC9492 /* ic_home_black_24dp.png */; };
+		089922D81F4DC7E900FC9492 /* ic_lock_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 089922B61F4DC7E900FC9492 /* ic_lock_black_24dp.png */; };
+		089922D91F4DC7E900FC9492 /* ic_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 089922B71F4DC7E900FC9492 /* ic_menu.png */; };
+		089922DA1F4DC7E900FC9492 /* ic_phone_android_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 089922B81F4DC7E900FC9492 /* ic_phone_android_black_24dp.png */; };
+		089922DB1F4DC7E900FC9492 /* ic_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 089922B91F4DC7E900FC9492 /* ic_profile.png */; };
+		089922DC1F4DC7E900FC9492 /* ic_pubs.png in Resources */ = {isa = PBXBuildFile; fileRef = 089922BA1F4DC7E900FC9492 /* ic_pubs.png */; };
+		089922DD1F4DC7E900FC9492 /* ic_remove_circle_outline_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 089922BB1F4DC7E900FC9492 /* ic_remove_circle_outline_black.png */; };
+		089922DE1F4DC7E900FC9492 /* jacobcreek-wine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 089922BC1F4DC7E900FC9492 /* jacobcreek-wine.jpg */; };
+		089922DF1F4DC7E900FC9492 /* kingfisher.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 089922BD1F4DC7E900FC9492 /* kingfisher.jpg */; };
+		089922E01F4DC7E900FC9492 /* lit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 089922BE1F4DC7E900FC9492 /* lit.jpg */; };
+		089922E11F4DC7E900FC9492 /* cocktail.png in Resources */ = {isa = PBXBuildFile; fileRef = 089922BF1F4DC7E900FC9492 /* cocktail.png */; };
+		089922E21F4DC7E900FC9492 /* oldmonk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 089922C01F4DC7E900FC9492 /* oldmonk.jpg */; };
+		089922E31F4DC7E900FC9492 /* rum.png in Resources */ = {isa = PBXBuildFile; fileRef = 089922C11F4DC7E900FC9492 /* rum.png */; };
+		089922E41F4DC7E900FC9492 /* smirnoff-vodka.png in Resources */ = {isa = PBXBuildFile; fileRef = 089922C21F4DC7E900FC9492 /* smirnoff-vodka.png */; };
+		089922E61F4DC7E900FC9492 /* vodka.png in Resources */ = {isa = PBXBuildFile; fileRef = 089922C41F4DC7E900FC9492 /* vodka.png */; };
+		089922E71F4DC7E900FC9492 /* whiskey.png in Resources */ = {isa = PBXBuildFile; fileRef = 089922C51F4DC7E900FC9492 /* whiskey.png */; };
+		089922E81F4DC7E900FC9492 /* wine.png in Resources */ = {isa = PBXBuildFile; fileRef = 089922C61F4DC7E900FC9492 /* wine.png */; };
+		089922EA1F4DC7F700FC9492 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089922E91F4DC7F700FC9492 /* Main.storyboard */; };
+		089922EC1F4DC80D00FC9492 /* ShelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089922EB1F4DC80D00FC9492 /* ShelfViewController.swift */; };
+		089922EE1F4DC81300FC9492 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089922ED1F4DC81300FC9492 /* MenuViewController.swift */; };
+		089922F01F4DC81800FC9492 /* BoozeNation.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 089922EF1F4DC81800FC9492 /* BoozeNation.xcdatamodel */; };
+		089F27CA1F751BD300B7D4DD /* addToCart.xib in Resources */ = {isa = PBXBuildFile; fileRef = 089F27C91F751BD300B7D4DD /* addToCart.xib */; };
+		08B0D1061FCC1B4D00FECE5A /* mocktails.png in Resources */ = {isa = PBXBuildFile; fileRef = 08B0D1051FCC1B4C00FECE5A /* mocktails.png */; };
+		08B0D10A1FCC2DC500FECE5A /* event_transaction.png in Resources */ = {isa = PBXBuildFile; fileRef = 08B0D1091FCC2DC500FECE5A /* event_transaction.png */; };
+		08B973051F573DA300ADAF31 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08B973041F573DA300ADAF31 /* GoogleService-Info.plist */; };
+		08BF6ECF1F52048A00D0A5AD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BF6ECE1F52048A00D0A5AD /* ProfileViewController.swift */; };
+		08BF6ED11F52054500D0A5AD /* img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08BF6ED01F52054500D0A5AD /* img.jpg */; };
+		08BF6ED31F52BD6500D0A5AD /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 08BF6ED21F52BD6500D0A5AD /* unchecked.png */; };
+		08C6BC8C1FF3F665002B354A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C6BC8B1FF3F665002B354A /* libz.tbd */; };
+		08F75B971F4EFFFE00B17A71 /* upload_YXlnlK-medium.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F75B961F4EFFFE00B17A71 /* upload_YXlnlK-medium.png */; };
+		08F75B991F4F007600B17A71 /* beerFloatButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F75B981F4F007600B17A71 /* beerFloatButton.png */; };
+		4624C34D1FB89A9E00CB8693 /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4624C34C1FB89A9E00CB8693 /* SweetAlert.swift */; };
+		4624C34F1FB89AA900CB8693 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4624C34E1FB89AA900CB8693 /* Alerts.swift */; };
+		464F46E41FA506C300F05395 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F46E21FA506C300F05395 /* Spinner.swift */; };
+		464F46E51FA506C300F05395 /* Spinner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 464F46E31FA506C300F05395 /* Spinner.xib */; };
+		467F0FDC1FB6376F00AC7A80 /* InternetReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467F0FDA1FB6376F00AC7A80 /* InternetReachability.swift */; };
+		467F0FDD1FB6376F00AC7A80 /* InternetReachability.xib in Resources */ = {isa = PBXBuildFile; fileRef = 467F0FDB1FB6376F00AC7A80 /* InternetReachability.xib */; };
+		46AC92C31FBCB6DA00C15730 /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AC92C11FBCB6DA00C15730 /* Gift.swift */; };
+		46AC92C41FBCB6DA00C15730 /* Gift.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46AC92C21FBCB6DA00C15730 /* Gift.xib */; };
+		46CED8C11FB6420F00D42E8A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CED8C01FB6420F00D42E8A /* Reachability.swift */; };
+		6EEF778C5EC2113F1367CF65 /* Pods_BoozeNationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B7C869D2EC7A55F3BD9E3C /* Pods_BoozeNationUITests.framework */; };
+		B23BA23D1F7798D90020DF46 /* tuto1.png in Resources */ = {isa = PBXBuildFile; fileRef = B23BA2381F7798D90020DF46 /* tuto1.png */; };
+		B23BA23E1F7798D90020DF46 /* tuto2.png in Resources */ = {isa = PBXBuildFile; fileRef = B23BA2391F7798D90020DF46 /* tuto2.png */; };
+		B23BA23F1F7798D90020DF46 /* newtuto3.png in Resources */ = {isa = PBXBuildFile; fileRef = B23BA23A1F7798D90020DF46 /* newtuto3.png */; };
+		B23BA2401F7798D90020DF46 /* tuto4.png in Resources */ = {isa = PBXBuildFile; fileRef = B23BA23B1F7798D90020DF46 /* tuto4.png */; };
+		B23BA2411F7798D90020DF46 /* tutorial_body_full.png in Resources */ = {isa = PBXBuildFile; fileRef = B23BA23C1F7798D90020DF46 /* tutorial_body_full.png */; };
+		B255B33D1F4EBF9E00D5F3C8 /* PubsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B255B33C1F4EBF9E00D5F3C8 /* PubsViewController.swift */; };
+		B29049FB1F91FA5700244E70 /* DesignableUITextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29049FA1F91FA5600244E70 /* DesignableUITextFieldViewController.swift */; };
+		B29049FD1F91FA6700244E70 /* AppPreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29049FC1F91FA6700244E70 /* AppPreferenceViewController.swift */; };
+		B29049FF1F91FA7200244E70 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29049FE1F91FA7200244E70 /* AboutUsViewController.swift */; };
+		B2904A031F91FA8000244E70 /* HelpAndSupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2904A021F91FA8000244E70 /* HelpAndSupportViewController.swift */; };
+		B2904A051F91FA9100244E70 /* TransactionHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2904A041F91FA9100244E70 /* TransactionHistoryViewController.swift */; };
+		B2A083241FB87253004457A5 /* RedeemOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A083231FB87253004457A5 /* RedeemOrderViewController.swift */; };
+		B2A083261FB87274004457A5 /* RedeemOrderfromPubsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A083251FB87273004457A5 /* RedeemOrderfromPubsViewController.swift */; };
+		DD5DCC165DF660E35FB7F694 /* Pods_BoozeNationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C373906E5FB20926D4E624E4 /* Pods_BoozeNationTests.framework */; };
+		FE1C65982743AAFE6BE951CB /* Pods_BoozeNation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CB9E85CDB0E5ADD04E28A1 /* Pods_BoozeNation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		004B251A1F4DA77900BD3FF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 004B24FD1F4DA77900BD3FF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 004B25041F4DA77900BD3FF7;
+			remoteInfo = BoozeNation;
+		};
+		004B25251F4DA77900BD3FF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 004B24FD1F4DA77900BD3FF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 004B25041F4DA77900BD3FF7;
+			remoteInfo = BoozeNation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0880FA211FF683CC00264C8B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0030A1F51F500A73006CA8F9 /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked.png; sourceTree = "<group>"; };
+		0030A1F91F500C83006CA8F9 /* UpdateProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateProfileViewController.swift; sourceTree = "<group>"; };
+		0030A1FF1F5029FF006CA8F9 /* dotuncheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dotuncheck.png; sourceTree = "<group>"; };
+		0030A2001F5029FF006CA8F9 /* dotcheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dotcheck.png; sourceTree = "<group>"; };
+		0030A2211F507724006CA8F9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		003C71B61F8D527100C4C761 /* MenuSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSlider.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		004B25051F4DA77900BD3FF7 /* BoozeNation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoozeNation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		004B25081F4DA77900BD3FF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		004B250F1F4DA77900BD3FF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		004B25121F4DA77900BD3FF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		004B25141F4DA77900BD3FF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		004B25191F4DA77900BD3FF7 /* BoozeNationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoozeNationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		004B251D1F4DA77900BD3FF7 /* BoozeNationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoozeNationTests.swift; sourceTree = "<group>"; };
+		004B251F1F4DA77900BD3FF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		004B25241F4DA77900BD3FF7 /* BoozeNationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoozeNationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		004B25281F4DA77900BD3FF7 /* BoozeNationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoozeNationUITests.swift; sourceTree = "<group>"; };
+		004B252A1F4DA77900BD3FF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00847C641F52139D00DE36C0 /* addSlider.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = addSlider.xib; sourceTree = "<group>"; };
+		00847C661F5213AC00DE36C0 /* ShelfSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelfSlider.swift; sourceTree = "<group>"; tabWidth = 4; };
+		009CD5081FFBAF7900DF7106 /* GiftSendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftSendViewController.swift; sourceTree = "<group>"; };
+		009CD50A1FFBAF7900DF7106 /* GiftSendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GiftSendViewController.xib; sourceTree = "<group>"; };
+		00A1263B1F4FE3850039869A /* signingoogle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signingoogle.png; sourceTree = "<group>"; };
+		00A1263D1F4FE5C40039869A /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		00A6CAD41F7E2F7D0001DAAC /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		00F6AFC41F8FF1D100236B3A /* source.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = source.gif; sourceTree = "<group>"; };
+		08027F46202C683200E1D493 /* TransactionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetail.swift; sourceTree = "<group>"; };
+		08027F52202DC6CE00E1D493 /* WalkThroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkThroughViewController.swift; sourceTree = "<group>"; };
+		08027F53202DC6CE00E1D493 /* WalkThroughCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkThroughCollectionViewCell.swift; sourceTree = "<group>"; };
+		08027F56202DC71600E1D493 /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
+		085CA9DE201CFEB5008BA020 /* Canvas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Canvas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08745CA1202F601D00479EFF /* FinalPayU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalPayU.swift; sourceTree = "<group>"; };
+		08745CA5202F606D00479EFF /* PUCBApproveView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PUCBApproveView.xib; sourceTree = "<group>"; };
+		08745CA6202F606D00479EFF /* PUCBPassowrdWithIncorrectOTPView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PUCBPassowrdWithIncorrectOTPView.xib; sourceTree = "<group>"; };
+		08745CA7202F606D00479EFF /* PUCBFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PUCBFooterView.xib; sourceTree = "<group>"; };
+		08745CA8202F606D00479EFF /* PUCBUserIdNB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PUCBUserIdNB.xib; sourceTree = "<group>"; };
+		08745CA9202F606D00479EFF /* PayUCBInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PayUCBInfo.plist; sourceTree = "<group>"; };
+		08745CAA202F606D00479EFF /* PUCBRegisterOption.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PUCBRegisterOption.xib; sourceTree = "<group>"; };
+		08745CAB202F606D00479EFF /* CBConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBConnection.h; sourceTree = "<group>"; };
+		08745CAC202F606D00479EFF /* CBWKConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBWKConnection.h; sourceTree = "<group>"; };
+		08745CAD202F606D00479EFF /* PUCBWebVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUCBWebVC.h; sourceTree = "<group>"; };
+		08745CAE202F606D00479EFF /* PayU_CB_SDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayU_CB_SDK.h; sourceTree = "<group>"; };
+		08745CAF202F606D00479EFF /* PUCBConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUCBConfiguration.h; sourceTree = "<group>"; };
+		08745CB0202F606D00479EFF /* CBConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBConstant.h; sourceTree = "<group>"; };
+		08745CB1202F606D00479EFF /* PUCBReviewOrderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PUCBReviewOrderView.xib; sourceTree = "<group>"; };
+		08745CB2202F606D00479EFF /* PUCBAllPaymentOption.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PUCBAllPaymentOption.xib; sourceTree = "<group>"; };
+		08745CB3202F606D00479EFF /* PUCBROCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PUCBROCell.xib; sourceTree = "<group>"; };
+		08745CB4202F606D00479EFF /* PUCBImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PUCBImages.xcassets; sourceTree = "<group>"; };
+		08745CB5202F606D00479EFF /* PUCBLoader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PUCBLoader.xib; sourceTree = "<group>"; };
+		08745CB6202F606D00479EFF /* PUCBReviewOrderConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUCBReviewOrderConfig.h; sourceTree = "<group>"; };
+		08745CB7202F606D00479EFF /* PUCBBankPageLoading.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PUCBBankPageLoading.xib; sourceTree = "<group>"; };
+		08745CB8202F606D00479EFF /* PUCBPasswordNB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PUCBPasswordNB.xib; sourceTree = "<group>"; };
+		08745CB9202F606D00479EFF /* PUCBHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PUCBHeaderView.xib; sourceTree = "<group>"; };
+		08745CBA202F606D00479EFF /* PUCBSurePay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PUCBSurePay.xib; sourceTree = "<group>"; };
+		08745CBB202F606D00479EFF /* PUCBBaseConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUCBBaseConnection.h; sourceTree = "<group>"; };
+		08745CBC202F606D00479EFF /* PayUCBWebViewResponseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUCBWebViewResponseDelegate.h; sourceTree = "<group>"; };
+		08745CBD202F606D00479EFF /* PUCBRegenerateOTPView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PUCBRegenerateOTPView.xib; sourceTree = "<group>"; };
+		08745CBE202F606D00479EFF /* PUCBWKTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PUCBWKTest.html; sourceTree = "<group>"; };
+		08745CC2202F606D00479EFF /* PUUIMainStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PUUIMainStoryBoard.storyboard; sourceTree = "<group>"; };
+		08745CC4202F606D00479EFF /* iOSDefaultActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSDefaultActivityIndicator.h; sourceTree = "<group>"; };
+		08745CC5202F606D00479EFF /* iOSDefaultActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSDefaultActivityIndicator.m; sourceTree = "<group>"; };
+		08745CC7202F606D00479EFF /* PUUIPaymentOptionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUUIPaymentOptionVC.h; sourceTree = "<group>"; };
+		08745CC8202F606D00479EFF /* PUUICardOptionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUUICardOptionVC.h; sourceTree = "<group>"; };
+		08745CC9202F606D00479EFF /* PUUICCDCVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUUICCDCVC.m; sourceTree = "<group>"; };
+		08745CCB202F606D00479EFF /* PUUIWrapperKHTabPagerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUUIWrapperKHTabPagerVC.h; sourceTree = "<group>"; };
+		08745CCC202F606D00479EFF /* PUUIBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUUIBaseVC.m; sourceTree = "<group>"; };
+		08745CCD202F606D00479EFF /* PUUIBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUUIBaseVC.h; sourceTree = "<group>"; };
+		08745CCE202F606D00479EFF /* PUUIWrapperKHTabPagerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUUIWrapperKHTabPagerVC.m; sourceTree = "<group>"; };
+		08745CCF202F606D00479EFF /* PUUIPayUMoneyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUUIPayUMoneyVC.h; sourceTree = "<group>"; };
+		08745CD0202F606D00479EFF /* PUUITabBarTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUUITabBarTopView.m; sourceTree = "<group>"; };
+		08745CD1202F606D00479EFF /* PUUINBVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUUINBVC.h; sourceTree = "<group>"; };
+		08745CD2202F606D00479EFF /* PUUIWebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUUIWebViewVC.m; sourceTree = "<group>"; };
+		08745CD3202F606D00479EFF /* PUUIStoredCardCarouselVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUUIStoredCardCarouselVC.h; sourceTree = "<group>"; };
+		08745CD4202F606D00479EFF /* PUUICardOptionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUUICardOptionVC.m; sourceTree = "<group>"; };
+		08745CD5202F606D00479EFF /* PUUIPaymentOptionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUUIPaymentOptionVC.m; sourceTree = "<group>"; };
+		08745CD6202F606D00479EFF /* PUUICCDCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUUICCDCVC.h; sourceTree = "<group>"; };
+		08745CD7202F606D00479EFF /* PUUITabBarTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PUUITabBarTopView.xib; sourceTree = "<group>"; };
+		08745CD8202F606D00479EFF /* PUUINBVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUUINBVC.m; sourceTree = "<group>"; };
+		08745CD9202F606D00479EFF /* PUUITabBarTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUUITabBarTopView.h; sourceTree = "<group>"; };
+		08745CDA202F606D00479EFF /* PUUIPayUMoneyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUUIPayUMoneyVC.m; sourceTree = "<group>"; };
+		08745CDB202F606D00479EFF /* PUUIStoredCardCarouselVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUUIStoredCardCarouselVC.m; sourceTree = "<group>"; };
+		08745CDC202F606D00479EFF /* PUUIWebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUUIWebViewVC.h; sourceTree = "<group>"; };
+		08745CDD202F606D00479EFF /* PUUIAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PUUIAssets.xcassets; sourceTree = "<group>"; };
+		08745CDF202F606D00479EFF /* PUUIStoredCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUUIStoredCardView.m; sourceTree = "<group>"; };
+		08745CE0202F606D00479EFF /* PUUIEMITopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUUIEMITopView.h; sourceTree = "<group>"; };
+		08745CE1202F606D00479EFF /* PUUINBTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUUINBTopView.h; sourceTree = "<group>"; };
+		08745CE2202F606D00479EFF /* PUUIStoredCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUUIStoredCardView.h; sourceTree = "<group>"; };
+		08745CE3202F606D00479EFF /* PUUIEMITopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PUUIEMITopView.xib; sourceTree = "<group>"; };
+		08745CE4202F606D00479EFF /* PUUINBTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUUINBTopView.m; sourceTree = "<group>"; };
+		08745CE5202F606D00479EFF /* PUUIEMITopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUUIEMITopView.m; sourceTree = "<group>"; };
+		08745CE6202F606D00479EFF /* PUUIStoredCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PUUIStoredCardView.xib; sourceTree = "<group>"; };
+		08745CEA202F606D00479EFF /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		08745CEB202F606D00479EFF /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		08745CED202F606D00479EFF /* PUUIConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUUIConstants.m; sourceTree = "<group>"; };
+		08745CEE202F606D00479EFF /* PUUIImageConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUUIImageConstants.m; sourceTree = "<group>"; };
+		08745CEF202F606D00479EFF /* UIColor+PUUIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PUUIColor.h"; sourceTree = "<group>"; };
+		08745CF0202F606D00479EFF /* PUUIUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUUIUtility.m; sourceTree = "<group>"; };
+		08745CF2202F606D00479EFF /* KHTabScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHTabScrollView.h; sourceTree = "<group>"; };
+		08745CF3202F606D00479EFF /* KHTabPagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHTabPagerViewController.m; sourceTree = "<group>"; };
+		08745CF4202F606D00479EFF /* KHTabScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHTabScrollView.m; sourceTree = "<group>"; };
+		08745CF5202F606D00479EFF /* KHTabPagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHTabPagerViewController.h; sourceTree = "<group>"; };
+		08745CF6202F606D00479EFF /* PUUIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUUIConstants.h; sourceTree = "<group>"; };
+		08745CF8202F606D00479EFF /* PUUIReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUUIReachability.h; sourceTree = "<group>"; };
+		08745CF9202F606D00479EFF /* PUUIReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUUIReachability.m; sourceTree = "<group>"; };
+		08745CFA202F606D00479EFF /* PUUIImageConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUUIImageConstants.h; sourceTree = "<group>"; };
+		08745CFB202F606D00479EFF /* PUUIUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUUIUtility.h; sourceTree = "<group>"; };
+		08745CFC202F606D00479EFF /* UIColor+PUUIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PUUIColor.m"; sourceTree = "<group>"; };
+		08745CFE202F606D00479EFF /* libPayU_iOS_CoreSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayU_iOS_CoreSDK.a; sourceTree = "<group>"; };
+		08745D00202F606D00479EFF /* PayUCreatePostParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUCreatePostParam.h; sourceTree = "<group>"; };
+		08745D01202F606E00479EFF /* PayUWebViewResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUWebViewResponse.h; sourceTree = "<group>"; };
+		08745D02202F606E00479EFF /* PayUReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUReachability.h; sourceTree = "<group>"; };
+		08745D03202F606E00479EFF /* PayUModelGetTxnInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUModelGetTxnInfo.h; sourceTree = "<group>"; };
+		08745D04202F606E00479EFF /* PayUDontUseThisClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUDontUseThisClass.h; sourceTree = "<group>"; };
+		08745D05202F606E00479EFF /* PayU_iOS_CoreSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayU_iOS_CoreSDK.h; sourceTree = "<group>"; };
+		08745D06202F606E00479EFF /* PayUUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUUtils.h; sourceTree = "<group>"; };
+		08745D07202F606E00479EFF /* PayUModelCashCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUModelCashCard.h; sourceTree = "<group>"; };
+		08745D08202F606E00479EFF /* PayUCreateRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUCreateRequest.h; sourceTree = "<group>"; };
+		08745D09202F606E00479EFF /* PayUModelPaymentParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUModelPaymentParams.h; sourceTree = "<group>"; };
+		08745D0A202F606E00479EFF /* PayUModelStoredCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUModelStoredCard.h; sourceTree = "<group>"; };
+		08745D0B202F606E00479EFF /* PayUModelPaymentRelatedDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUModelPaymentRelatedDetail.h; sourceTree = "<group>"; };
+		08745D0C202F606E00479EFF /* PayUModelEMI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUModelEMI.h; sourceTree = "<group>"; };
+		08745D0D202F606E00479EFF /* CoreTelephony.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTelephony.h; sourceTree = "<group>"; };
+		08745D0E202F606E00479EFF /* PayUModelCheckIsDomestic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUModelCheckIsDomestic.h; sourceTree = "<group>"; };
+		08745D0F202F606E00479EFF /* PayUFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUFileManager.h; sourceTree = "<group>"; };
+		08745D10202F606E00479EFF /* PayUWSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUWSManager.h; sourceTree = "<group>"; };
+		08745D11202F606E00479EFF /* PayUJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUJSONParser.h; sourceTree = "<group>"; };
+		08745D12202F606E00479EFF /* PayUSDKInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PayUSDKInfo.plist; sourceTree = "<group>"; };
+		08745D13202F606E00479EFF /* PayUWebServiceResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUWebServiceResponse.h; sourceTree = "<group>"; };
+		08745D14202F606E00479EFF /* PayUModelNetBanking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUModelNetBanking.h; sourceTree = "<group>"; };
+		08745D15202F606E00479EFF /* PayUModelEMIDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUModelEMIDetails.h; sourceTree = "<group>"; };
+		08745D16202F606E00479EFF /* PayUConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUConstants.h; sourceTree = "<group>"; };
+		08745D17202F606E00479EFF /* PayUModelHashes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUModelHashes.h; sourceTree = "<group>"; };
+		08745D18202F606E00479EFF /* PayUModelOfferDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUModelOfferDetails.h; sourceTree = "<group>"; };
+		08745D19202F606E00479EFF /* PayUValidations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUValidations.h; sourceTree = "<group>"; };
+		08745D1A202F606E00479EFF /* PayUModelVerifyPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUModelVerifyPayment.h; sourceTree = "<group>"; };
+		08745D1B202F606E00479EFF /* PayUModelOfferStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUModelOfferStatus.h; sourceTree = "<group>"; };
+		08745D1C202F606E00479EFF /* PayUSharedDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayUSharedDataManager.h; sourceTree = "<group>"; };
+		08745D1D202F606E00479EFF /* libiOSCustomBrowser.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiOSCustomBrowser.a; sourceTree = "<group>"; };
+		089922A51F4DC7E900FC9492 /* 100pipers-whiskey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "100pipers-whiskey.jpg"; sourceTree = "<group>"; };
+		089922A61F4DC7E900FC9492 /* absolut-vodka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "absolut-vodka.png"; sourceTree = "<group>"; };
+		089922A71F4DC7E900FC9492 /* banner_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banner_1.jpg; sourceTree = "<group>"; };
+		089922A81F4DC7E900FC9492 /* beer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beer.png; sourceTree = "<group>"; };
+		089922A91F4DC7E900FC9492 /* Bira.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bira.jpg; sourceTree = "<group>"; };
+		089922AA1F4DC7E900FC9492 /* blackdog-whiskey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "blackdog-whiskey.jpg"; sourceTree = "<group>"; };
+		089922AC1F4DC7E900FC9492 /* budweiser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = budweiser.png; sourceTree = "<group>"; };
+		089922AD1F4DC7E900FC9492 /* bz_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bz_logo.png; sourceTree = "<group>"; };
+		089922AE1F4DC7E900FC9492 /* captainmorgan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = captainmorgan.png; sourceTree = "<group>"; };
+		089922AF1F4DC7E900FC9492 /* chivasregal-whiskey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "chivasregal-whiskey.jpg"; sourceTree = "<group>"; };
+		089922B01F4DC7E900FC9492 /* heineken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heineken.png; sourceTree = "<group>"; };
+		089922B11F4DC7E900FC9492 /* ic_account_circle_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_account_circle_black_24dp.png; sourceTree = "<group>"; };
+		089922B21F4DC7E900FC9492 /* ic_add_circle_outline_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_add_circle_outline_black.png; sourceTree = "<group>"; };
+		089922B31F4DC7E900FC9492 /* ic_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_bar.png; sourceTree = "<group>"; };
+		089922B41F4DC7E900FC9492 /* ic_email_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_email_black_24dp.png; sourceTree = "<group>"; };
+		089922B51F4DC7E900FC9492 /* ic_home_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_home_black_24dp.png; sourceTree = "<group>"; };
+		089922B61F4DC7E900FC9492 /* ic_lock_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_lock_black_24dp.png; sourceTree = "<group>"; };
+		089922B71F4DC7E900FC9492 /* ic_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_menu.png; sourceTree = "<group>"; };
+		089922B81F4DC7E900FC9492 /* ic_phone_android_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_phone_android_black_24dp.png; sourceTree = "<group>"; };
+		089922B91F4DC7E900FC9492 /* ic_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_profile.png; sourceTree = "<group>"; };
+		089922BA1F4DC7E900FC9492 /* ic_pubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_pubs.png; sourceTree = "<group>"; };
+		089922BB1F4DC7E900FC9492 /* ic_remove_circle_outline_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_remove_circle_outline_black.png; sourceTree = "<group>"; };
+		089922BC1F4DC7E900FC9492 /* jacobcreek-wine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jacobcreek-wine.jpg"; sourceTree = "<group>"; };
+		089922BD1F4DC7E900FC9492 /* kingfisher.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kingfisher.jpg; sourceTree = "<group>"; };
+		089922BE1F4DC7E900FC9492 /* lit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lit.jpg; sourceTree = "<group>"; };
+		089922BF1F4DC7E900FC9492 /* cocktail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cocktail.png; sourceTree = "<group>"; };
+		089922C01F4DC7E900FC9492 /* oldmonk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = oldmonk.jpg; sourceTree = "<group>"; };
+		089922C11F4DC7E900FC9492 /* rum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rum.png; sourceTree = "<group>"; };
+		089922C21F4DC7E900FC9492 /* smirnoff-vodka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smirnoff-vodka.png"; sourceTree = "<group>"; };
+		089922C41F4DC7E900FC9492 /* vodka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vodka.png; sourceTree = "<group>"; };
+		089922C51F4DC7E900FC9492 /* whiskey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiskey.png; sourceTree = "<group>"; };
+		089922C61F4DC7E900FC9492 /* wine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wine.png; sourceTree = "<group>"; };
+		089922E91F4DC7F700FC9492 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		089922EB1F4DC80D00FC9492 /* ShelfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelfViewController.swift; sourceTree = "<group>"; };
+		089922ED1F4DC81300FC9492 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		089922EF1F4DC81800FC9492 /* BoozeNation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BoozeNation.xcdatamodel; sourceTree = "<group>"; };
+		089F27C91F751BD300B7D4DD /* addToCart.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = addToCart.xib; sourceTree = "<group>"; };
+		08B0D1051FCC1B4C00FECE5A /* mocktails.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mocktails.png; sourceTree = "<group>"; };
+		08B0D1091FCC2DC500FECE5A /* event_transaction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = event_transaction.png; sourceTree = "<group>"; };
+		08B973041F573DA300ADAF31 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		08BF6ECE1F52048A00D0A5AD /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		08BF6ED01F52054500D0A5AD /* img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img.jpg; sourceTree = "<group>"; };
+		08BF6ED21F52BD6500D0A5AD /* unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked.png; sourceTree = "<group>"; };
+		08C6BC8B1FF3F665002B354A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		08E460731F67B1CD0063E08F /* BoozeNation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BoozeNation-Bridging-Header.h"; sourceTree = "<group>"; };
+		08E460761F686E690063E08F /* BoozeNation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BoozeNation.entitlements; sourceTree = "<group>"; };
+		08F75B961F4EFFFE00B17A71 /* upload_YXlnlK-medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload_YXlnlK-medium.png"; sourceTree = "<group>"; };
+		08F75B981F4F007600B17A71 /* beerFloatButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beerFloatButton.png; sourceTree = "<group>"; };
+		4624C34C1FB89A9E00CB8693 /* SweetAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetAlert.swift; sourceTree = "<group>"; };
+		4624C34E1FB89AA900CB8693 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		464F46E21FA506C300F05395 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		464F46E31FA506C300F05395 /* Spinner.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Spinner.xib; sourceTree = "<group>"; };
+		467F0FDA1FB6376F00AC7A80 /* InternetReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetReachability.swift; sourceTree = "<group>"; };
+		467F0FDB1FB6376F00AC7A80 /* InternetReachability.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InternetReachability.xib; sourceTree = "<group>"; };
+		46AC92C11FBCB6DA00C15730 /* Gift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
+		46AC92C21FBCB6DA00C15730 /* Gift.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Gift.xib; sourceTree = "<group>"; };
+		46CED8C01FB6420F00D42E8A /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		4F4E5456AE4977FC28D5C0C2 /* Pods-BoozeNation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoozeNation.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoozeNation/Pods-BoozeNation.release.xcconfig"; sourceTree = "<group>"; };
+		68E3AB5436543C808B4804EB /* Pods-BoozeNation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoozeNation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BoozeNation/Pods-BoozeNation.debug.xcconfig"; sourceTree = "<group>"; };
+		69175AF9C72F0EEE819B1CC3 /* Pods-BoozeNationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoozeNationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoozeNationTests/Pods-BoozeNationTests.release.xcconfig"; sourceTree = "<group>"; };
+		75B7C869D2EC7A55F3BD9E3C /* Pods_BoozeNationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoozeNationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A25358CCF23402601C4BDD /* Pods-BoozeNationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoozeNationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BoozeNationUITests/Pods-BoozeNationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9397429A1E8BE2E3F3947AD3 /* Pods-BoozeNationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoozeNationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoozeNationUITests/Pods-BoozeNationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B23BA2381F7798D90020DF46 /* tuto1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tuto1.png; sourceTree = "<group>"; };
+		B23BA2391F7798D90020DF46 /* tuto2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tuto2.png; sourceTree = "<group>"; };
+		B23BA23A1F7798D90020DF46 /* newtuto3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newtuto3.png; sourceTree = "<group>"; };
+		B23BA23B1F7798D90020DF46 /* tuto4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tuto4.png; sourceTree = "<group>"; };
+		B23BA23C1F7798D90020DF46 /* tutorial_body_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tutorial_body_full.png; sourceTree = "<group>"; };
+		B255B33C1F4EBF9E00D5F3C8 /* PubsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PubsViewController.swift; sourceTree = "<group>"; };
+		B29049FA1F91FA5600244E70 /* DesignableUITextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUITextFieldViewController.swift; sourceTree = "<group>"; };
+		B29049FC1F91FA6700244E70 /* AppPreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreferenceViewController.swift; sourceTree = "<group>"; };
+		B29049FE1F91FA7200244E70 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		B2904A021F91FA8000244E70 /* HelpAndSupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpAndSupportViewController.swift; sourceTree = "<group>"; };
+		B2904A041F91FA9100244E70 /* TransactionHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryViewController.swift; sourceTree = "<group>"; };
+		B2A083231FB87253004457A5 /* RedeemOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemOrderViewController.swift; sourceTree = "<group>"; };
+		B2A083251FB87273004457A5 /* RedeemOrderfromPubsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemOrderfromPubsViewController.swift; sourceTree = "<group>"; };
+		C373906E5FB20926D4E624E4 /* Pods_BoozeNationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoozeNationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4CB9E85CDB0E5ADD04E28A1 /* Pods_BoozeNation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoozeNation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFA4CF40089F2560FB6ADB92 /* Pods-BoozeNationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoozeNationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BoozeNationTests/Pods-BoozeNationTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		004B25021F4DA77900BD3FF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08745D4D202F606E00479EFF /* libiOSCustomBrowser.a in Frameworks */,
+				08C6BC8C1FF3F665002B354A /* libz.tbd in Frameworks */,
+				085CA9FA201D0925008BA020 /* Canvas.framework in Frameworks */,
+				08745D4B202F606E00479EFF /* libPayU_iOS_CoreSDK.a in Frameworks */,
+				FE1C65982743AAFE6BE951CB /* Pods_BoozeNation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004B25161F4DA77900BD3FF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD5DCC165DF660E35FB7F694 /* Pods_BoozeNationTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004B25211F4DA77900BD3FF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EEF778C5EC2113F1367CF65 /* Pods_BoozeNationUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		004B24FC1F4DA77900BD3FF7 = {
+			isa = PBXGroup;
+			children = (
+				085CA9DE201CFEB5008BA020 /* Canvas.framework */,
+				B23BA2311F7798040020DF46 /* WalkThrough */,
+				004B25071F4DA77900BD3FF7 /* BoozeNation */,
+				004B251C1F4DA77900BD3FF7 /* BoozeNationTests */,
+				004B25271F4DA77900BD3FF7 /* BoozeNationUITests */,
+				004B25061F4DA77900BD3FF7 /* Products */,
+				089922A41F4DC7E900FC9492 /* Assets */,
+				BED207C4649FFAED12A42E7E /* Pods */,
+				4646804EBF329ABBD3A6F89D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		004B25061F4DA77900BD3FF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				004B25051F4DA77900BD3FF7 /* BoozeNation.app */,
+				004B25191F4DA77900BD3FF7 /* BoozeNationTests.xctest */,
+				004B25241F4DA77900BD3FF7 /* BoozeNationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		004B25071F4DA77900BD3FF7 /* BoozeNation */ = {
+			isa = PBXGroup;
+			children = (
+				08745CA3202F606D00479EFF /* PayU */,
+				08745CA1202F601D00479EFF /* FinalPayU.swift */,
+				08027F56202DC71600E1D493 /* UPCarouselFlowLayout.swift */,
+				08027F53202DC6CE00E1D493 /* WalkThroughCollectionViewCell.swift */,
+				08027F52202DC6CE00E1D493 /* WalkThroughViewController.swift */,
+				08E460761F686E690063E08F /* BoozeNation.entitlements */,
+				46CED8C01FB6420F00D42E8A /* Reachability.swift */,
+				004B25081F4DA77900BD3FF7 /* AppDelegate.swift */,
+				08B973041F573DA300ADAF31 /* GoogleService-Info.plist */,
+				089922ED1F4DC81300FC9492 /* MenuViewController.swift */,
+				089922EB1F4DC80D00FC9492 /* ShelfViewController.swift */,
+				0030A2211F507724006CA8F9 /* HomeViewController.swift */,
+				B255B33C1F4EBF9E00D5F3C8 /* PubsViewController.swift */,
+				00A1263D1F4FE5C40039869A /* loginViewController.swift */,
+				B29049FA1F91FA5600244E70 /* DesignableUITextFieldViewController.swift */,
+				08BF6ECE1F52048A00D0A5AD /* ProfileViewController.swift */,
+				B29049FC1F91FA6700244E70 /* AppPreferenceViewController.swift */,
+				B2A083231FB87253004457A5 /* RedeemOrderViewController.swift */,
+				0030A1F91F500C83006CA8F9 /* UpdateProfileViewController.swift */,
+				B2A083251FB87273004457A5 /* RedeemOrderfromPubsViewController.swift */,
+				B2904A041F91FA9100244E70 /* TransactionHistoryViewController.swift */,
+				08027F46202C683200E1D493 /* TransactionDetail.swift */,
+				B2904A021F91FA8000244E70 /* HelpAndSupportViewController.swift */,
+				B29049FE1F91FA7200244E70 /* AboutUsViewController.swift */,
+				089922E91F4DC7F700FC9492 /* Main.storyboard */,
+				004B25111F4DA77900BD3FF7 /* LaunchScreen.storyboard */,
+				46FA76211FBE106D00FF1756 /* Gift */,
+				463F1F241FA620320053F20E /* Spinners and popups  */,
+				008817AD1F7E51A3007DC37A /* Cart Related */,
+				004B25141F4DA77900BD3FF7 /* Info.plist */,
+				089922EF1F4DC81800FC9492 /* BoozeNation.xcdatamodel */,
+				08E460731F67B1CD0063E08F /* BoozeNation-Bridging-Header.h */,
+				004B250F1F4DA77900BD3FF7 /* Assets.xcassets */,
+			);
+			path = BoozeNation;
+			sourceTree = "<group>";
+		};
+		004B251C1F4DA77900BD3FF7 /* BoozeNationTests */ = {
+			isa = PBXGroup;
+			children = (
+				004B251D1F4DA77900BD3FF7 /* BoozeNationTests.swift */,
+				004B251F1F4DA77900BD3FF7 /* Info.plist */,
+			);
+			path = BoozeNationTests;
+			sourceTree = "<group>";
+		};
+		004B25271F4DA77900BD3FF7 /* BoozeNationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				004B25281F4DA77900BD3FF7 /* BoozeNationUITests.swift */,
+				004B252A1F4DA77900BD3FF7 /* Info.plist */,
+			);
+			path = BoozeNationUITests;
+			sourceTree = "<group>";
+		};
+		008817AD1F7E51A3007DC37A /* Cart Related */ = {
+			isa = PBXGroup;
+			children = (
+				00A6CAD41F7E2F7D0001DAAC /* CartViewController.swift */,
+				00847C661F5213AC00DE36C0 /* ShelfSlider.swift */,
+				003C71B61F8D527100C4C761 /* MenuSlider.swift */,
+				00847C641F52139D00DE36C0 /* addSlider.xib */,
+				089F27C91F751BD300B7D4DD /* addToCart.xib */,
+			);
+			path = "Cart Related";
+			sourceTree = "<group>";
+		};
+		08745CA3202F606D00479EFF /* PayU */ = {
+			isa = PBXGroup;
+			children = (
+				08745CA4202F606D00479EFF /* iOSCustomBrowser */,
+				08745CBF202F606D00479EFF /* SDKUI */,
+				08745CFD202F606D00479EFF /* SDK */,
+				08745D1D202F606E00479EFF /* libiOSCustomBrowser.a */,
+				08745D1E202F606E00479EFF /* CB */,
+			);
+			path = PayU;
+			sourceTree = "<group>";
+		};
+		08745CA4202F606D00479EFF /* iOSCustomBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				08745CA5202F606D00479EFF /* PUCBApproveView.xib */,
+				08745CA6202F606D00479EFF /* PUCBPassowrdWithIncorrectOTPView.xib */,
+				08745CA7202F606D00479EFF /* PUCBFooterView.xib */,
+				08745CA8202F606D00479EFF /* PUCBUserIdNB.xib */,
+				08745CA9202F606D00479EFF /* PayUCBInfo.plist */,
+				08745CAA202F606D00479EFF /* PUCBRegisterOption.xib */,
+				08745CAB202F606D00479EFF /* CBConnection.h */,
+				08745CAC202F606D00479EFF /* CBWKConnection.h */,
+				08745CAD202F606D00479EFF /* PUCBWebVC.h */,
+				08745CAE202F606D00479EFF /* PayU_CB_SDK.h */,
+				08745CAF202F606D00479EFF /* PUCBConfiguration.h */,
+				08745CB0202F606D00479EFF /* CBConstant.h */,
+				08745CB1202F606D00479EFF /* PUCBReviewOrderView.xib */,
+				08745CB2202F606D00479EFF /* PUCBAllPaymentOption.xib */,
+				08745CB3202F606D00479EFF /* PUCBROCell.xib */,
+				08745CB4202F606D00479EFF /* PUCBImages.xcassets */,
+				08745CB5202F606D00479EFF /* PUCBLoader.xib */,
+				08745CB6202F606D00479EFF /* PUCBReviewOrderConfig.h */,
+				08745CB7202F606D00479EFF /* PUCBBankPageLoading.xib */,
+				08745CB8202F606D00479EFF /* PUCBPasswordNB.xib */,
+				08745CB9202F606D00479EFF /* PUCBHeaderView.xib */,
+				08745CBA202F606D00479EFF /* PUCBSurePay.xib */,
+				08745CBB202F606D00479EFF /* PUCBBaseConnection.h */,
+				08745CBC202F606D00479EFF /* PayUCBWebViewResponseDelegate.h */,
+				08745CBD202F606D00479EFF /* PUCBRegenerateOTPView.xib */,
+				08745CBE202F606D00479EFF /* PUCBWKTest.html */,
+			);
+			path = iOSCustomBrowser;
+			sourceTree = "<group>";
+		};
+		08745CBF202F606D00479EFF /* SDKUI */ = {
+			isa = PBXGroup;
+			children = (
+				08745CC0202F606D00479EFF /* Resources */,
+				08745CC3202F606D00479EFF /* BusinessLayer */,
+				08745CC6202F606D00479EFF /* Presentation Layer */,
+				08745CDD202F606D00479EFF /* PUUIAssets.xcassets */,
+				08745CDE202F606D00479EFF /* CustomViews */,
+				08745CE7202F606D00479EFF /* Frameworks */,
+				08745CEC202F606D00479EFF /* Utility */,
+			);
+			path = SDKUI;
+			sourceTree = "<group>";
+		};
+		08745CC0202F606D00479EFF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				08745CC1202F606D00479EFF /* StoryBoard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		08745CC1202F606D00479EFF /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				08745CC2202F606D00479EFF /* PUUIMainStoryBoard.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		08745CC3202F606D00479EFF /* BusinessLayer */ = {
+			isa = PBXGroup;
+			children = (
+				08745CC4202F606D00479EFF /* iOSDefaultActivityIndicator.h */,
+				08745CC5202F606D00479EFF /* iOSDefaultActivityIndicator.m */,
+			);
+			path = BusinessLayer;
+			sourceTree = "<group>";
+		};
+		08745CC6202F606D00479EFF /* Presentation Layer */ = {
+			isa = PBXGroup;
+			children = (
+				08745CC7202F606D00479EFF /* PUUIPaymentOptionVC.h */,
+				08745CC8202F606D00479EFF /* PUUICardOptionVC.h */,
+				08745CC9202F606D00479EFF /* PUUICCDCVC.m */,
+				08745CCA202F606D00479EFF /* Base ViewController */,
+				08745CCF202F606D00479EFF /* PUUIPayUMoneyVC.h */,
+				08745CD0202F606D00479EFF /* PUUITabBarTopView.m */,
+				08745CD1202F606D00479EFF /* PUUINBVC.h */,
+				08745CD2202F606D00479EFF /* PUUIWebViewVC.m */,
+				08745CD3202F606D00479EFF /* PUUIStoredCardCarouselVC.h */,
+				08745CD4202F606D00479EFF /* PUUICardOptionVC.m */,
+				08745CD5202F606D00479EFF /* PUUIPaymentOptionVC.m */,
+				08745CD6202F606D00479EFF /* PUUICCDCVC.h */,
+				08745CD7202F606D00479EFF /* PUUITabBarTopView.xib */,
+				08745CD8202F606D00479EFF /* PUUINBVC.m */,
+				08745CD9202F606D00479EFF /* PUUITabBarTopView.h */,
+				08745CDA202F606D00479EFF /* PUUIPayUMoneyVC.m */,
+				08745CDB202F606D00479EFF /* PUUIStoredCardCarouselVC.m */,
+				08745CDC202F606D00479EFF /* PUUIWebViewVC.h */,
+			);
+			path = "Presentation Layer";
+			sourceTree = "<group>";
+		};
+		08745CCA202F606D00479EFF /* Base ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				08745CCB202F606D00479EFF /* PUUIWrapperKHTabPagerVC.h */,
+				08745CCC202F606D00479EFF /* PUUIBaseVC.m */,
+				08745CCD202F606D00479EFF /* PUUIBaseVC.h */,
+				08745CCE202F606D00479EFF /* PUUIWrapperKHTabPagerVC.m */,
+			);
+			path = "Base ViewController";
+			sourceTree = "<group>";
+		};
+		08745CDE202F606D00479EFF /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				08745CDF202F606D00479EFF /* PUUIStoredCardView.m */,
+				08745CE0202F606D00479EFF /* PUUIEMITopView.h */,
+				08745CE1202F606D00479EFF /* PUUINBTopView.h */,
+				08745CE2202F606D00479EFF /* PUUIStoredCardView.h */,
+				08745CE3202F606D00479EFF /* PUUIEMITopView.xib */,
+				08745CE4202F606D00479EFF /* PUUINBTopView.m */,
+				08745CE5202F606D00479EFF /* PUUIEMITopView.m */,
+				08745CE6202F606D00479EFF /* PUUIStoredCardView.xib */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		08745CE7202F606D00479EFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08745CE8202F606D00479EFF /* ThirdParty */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		08745CE8202F606D00479EFF /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				08745CE9202F606D00479EFF /* iCarousel */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		08745CE9202F606D00479EFF /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				08745CEA202F606D00479EFF /* iCarousel.m */,
+				08745CEB202F606D00479EFF /* iCarousel.h */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		08745CEC202F606D00479EFF /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				08745CED202F606D00479EFF /* PUUIConstants.m */,
+				08745CEE202F606D00479EFF /* PUUIImageConstants.m */,
+				08745CEF202F606D00479EFF /* UIColor+PUUIColor.h */,
+				08745CF0202F606D00479EFF /* PUUIUtility.m */,
+				08745CF1202F606D00479EFF /* KHTabPagerViewController */,
+				08745CF6202F606D00479EFF /* PUUIConstants.h */,
+				08745CF7202F606D00479EFF /* Reachability */,
+				08745CFA202F606D00479EFF /* PUUIImageConstants.h */,
+				08745CFB202F606D00479EFF /* PUUIUtility.h */,
+				08745CFC202F606D00479EFF /* UIColor+PUUIColor.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		08745CF1202F606D00479EFF /* KHTabPagerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				08745CF2202F606D00479EFF /* KHTabScrollView.h */,
+				08745CF3202F606D00479EFF /* KHTabPagerViewController.m */,
+				08745CF4202F606D00479EFF /* KHTabScrollView.m */,
+				08745CF5202F606D00479EFF /* KHTabPagerViewController.h */,
+			);
+			path = KHTabPagerViewController;
+			sourceTree = "<group>";
+		};
+		08745CF7202F606D00479EFF /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				08745CF8202F606D00479EFF /* PUUIReachability.h */,
+				08745CF9202F606D00479EFF /* PUUIReachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		08745CFD202F606D00479EFF /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				08745CFE202F606D00479EFF /* libPayU_iOS_CoreSDK.a */,
+				08745CFF202F606D00479EFF /* PayU_iOS_CoreSDK */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		08745CFF202F606D00479EFF /* PayU_iOS_CoreSDK */ = {
+			isa = PBXGroup;
+			children = (
+				08745D00202F606D00479EFF /* PayUCreatePostParam.h */,
+				08745D01202F606E00479EFF /* PayUWebViewResponse.h */,
+				08745D02202F606E00479EFF /* PayUReachability.h */,
+				08745D03202F606E00479EFF /* PayUModelGetTxnInfo.h */,
+				08745D04202F606E00479EFF /* PayUDontUseThisClass.h */,
+				08745D05202F606E00479EFF /* PayU_iOS_CoreSDK.h */,
+				08745D06202F606E00479EFF /* PayUUtils.h */,
+				08745D07202F606E00479EFF /* PayUModelCashCard.h */,
+				08745D08202F606E00479EFF /* PayUCreateRequest.h */,
+				08745D09202F606E00479EFF /* PayUModelPaymentParams.h */,
+				08745D0A202F606E00479EFF /* PayUModelStoredCard.h */,
+				08745D0B202F606E00479EFF /* PayUModelPaymentRelatedDetail.h */,
+				08745D0C202F606E00479EFF /* PayUModelEMI.h */,
+				08745D0D202F606E00479EFF /* CoreTelephony.h */,
+				08745D0E202F606E00479EFF /* PayUModelCheckIsDomestic.h */,
+				08745D0F202F606E00479EFF /* PayUFileManager.h */,
+				08745D10202F606E00479EFF /* PayUWSManager.h */,
+				08745D11202F606E00479EFF /* PayUJSONParser.h */,
+				08745D12202F606E00479EFF /* PayUSDKInfo.plist */,
+				08745D13202F606E00479EFF /* PayUWebServiceResponse.h */,
+				08745D14202F606E00479EFF /* PayUModelNetBanking.h */,
+				08745D15202F606E00479EFF /* PayUModelEMIDetails.h */,
+				08745D16202F606E00479EFF /* PayUConstants.h */,
+				08745D17202F606E00479EFF /* PayUModelHashes.h */,
+				08745D18202F606E00479EFF /* PayUModelOfferDetails.h */,
+				08745D19202F606E00479EFF /* PayUValidations.h */,
+				08745D1A202F606E00479EFF /* PayUModelVerifyPayment.h */,
+				08745D1B202F606E00479EFF /* PayUModelOfferStatus.h */,
+				08745D1C202F606E00479EFF /* PayUSharedDataManager.h */,
+			);
+			path = PayU_iOS_CoreSDK;
+			sourceTree = "<group>";
+		};
+		08745D1E202F606E00479EFF /* CB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CB;
+			sourceTree = "<group>";
+		};
+		089922A41F4DC7E900FC9492 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				089922A51F4DC7E900FC9492 /* 100pipers-whiskey.jpg */,
+				089922A61F4DC7E900FC9492 /* absolut-vodka.png */,
+				089922A71F4DC7E900FC9492 /* banner_1.jpg */,
+				089922A81F4DC7E900FC9492 /* beer.png */,
+				08F75B981F4F007600B17A71 /* beerFloatButton.png */,
+				089922A91F4DC7E900FC9492 /* Bira.jpg */,
+				089922AA1F4DC7E900FC9492 /* blackdog-whiskey.jpg */,
+				08B0D1091FCC2DC500FECE5A /* event_transaction.png */,
+				08B0D1051FCC1B4C00FECE5A /* mocktails.png */,
+				089922AC1F4DC7E900FC9492 /* budweiser.png */,
+				089922AD1F4DC7E900FC9492 /* bz_logo.png */,
+				089922AE1F4DC7E900FC9492 /* captainmorgan.png */,
+				0030A1F51F500A73006CA8F9 /* checked.png */,
+				089922AF1F4DC7E900FC9492 /* chivasregal-whiskey.jpg */,
+				089922BF1F4DC7E900FC9492 /* cocktail.png */,
+				0030A2001F5029FF006CA8F9 /* dotcheck.png */,
+				0030A1FF1F5029FF006CA8F9 /* dotuncheck.png */,
+				089922B01F4DC7E900FC9492 /* heineken.png */,
+				089922B11F4DC7E900FC9492 /* ic_account_circle_black_24dp.png */,
+				089922B21F4DC7E900FC9492 /* ic_add_circle_outline_black.png */,
+				089922B31F4DC7E900FC9492 /* ic_bar.png */,
+				089922B41F4DC7E900FC9492 /* ic_email_black_24dp.png */,
+				089922B51F4DC7E900FC9492 /* ic_home_black_24dp.png */,
+				089922B61F4DC7E900FC9492 /* ic_lock_black_24dp.png */,
+				089922B71F4DC7E900FC9492 /* ic_menu.png */,
+				089922B81F4DC7E900FC9492 /* ic_phone_android_black_24dp.png */,
+				089922B91F4DC7E900FC9492 /* ic_profile.png */,
+				089922BA1F4DC7E900FC9492 /* ic_pubs.png */,
+				089922BB1F4DC7E900FC9492 /* ic_remove_circle_outline_black.png */,
+				08BF6ED01F52054500D0A5AD /* img.jpg */,
+				089922BC1F4DC7E900FC9492 /* jacobcreek-wine.jpg */,
+				089922BD1F4DC7E900FC9492 /* kingfisher.jpg */,
+				089922BE1F4DC7E900FC9492 /* lit.jpg */,
+				089922C01F4DC7E900FC9492 /* oldmonk.jpg */,
+				089922C11F4DC7E900FC9492 /* rum.png */,
+				00A1263B1F4FE3850039869A /* signingoogle.png */,
+				089922C21F4DC7E900FC9492 /* smirnoff-vodka.png */,
+				00F6AFC41F8FF1D100236B3A /* source.gif */,
+				B23BA2381F7798D90020DF46 /* tuto1.png */,
+				B23BA2391F7798D90020DF46 /* tuto2.png */,
+				B23BA23A1F7798D90020DF46 /* newtuto3.png */,
+				B23BA23B1F7798D90020DF46 /* tuto4.png */,
+				B23BA23C1F7798D90020DF46 /* tutorial_body_full.png */,
+				08BF6ED21F52BD6500D0A5AD /* unchecked.png */,
+				08F75B961F4EFFFE00B17A71 /* upload_YXlnlK-medium.png */,
+				089922C41F4DC7E900FC9492 /* vodka.png */,
+				089922C51F4DC7E900FC9492 /* whiskey.png */,
+				089922C61F4DC7E900FC9492 /* wine.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		463F1F241FA620320053F20E /* Spinners and popups  */ = {
+			isa = PBXGroup;
+			children = (
+				464F46E21FA506C300F05395 /* Spinner.swift */,
+				464F46E31FA506C300F05395 /* Spinner.xib */,
+				4624C34E1FB89AA900CB8693 /* Alerts.swift */,
+				4624C34C1FB89A9E00CB8693 /* SweetAlert.swift */,
+				467F0FDA1FB6376F00AC7A80 /* InternetReachability.swift */,
+				467F0FDB1FB6376F00AC7A80 /* InternetReachability.xib */,
+			);
+			path = "Spinners and popups ";
+			sourceTree = "<group>";
+		};
+		4646804EBF329ABBD3A6F89D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08C6BC8B1FF3F665002B354A /* libz.tbd */,
+				C4CB9E85CDB0E5ADD04E28A1 /* Pods_BoozeNation.framework */,
+				C373906E5FB20926D4E624E4 /* Pods_BoozeNationTests.framework */,
+				75B7C869D2EC7A55F3BD9E3C /* Pods_BoozeNationUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46FA76211FBE106D00FF1756 /* Gift */ = {
+			isa = PBXGroup;
+			children = (
+				46AC92C11FBCB6DA00C15730 /* Gift.swift */,
+				46AC92C21FBCB6DA00C15730 /* Gift.xib */,
+				009CD5081FFBAF7900DF7106 /* GiftSendViewController.swift */,
+				009CD50A1FFBAF7900DF7106 /* GiftSendViewController.xib */,
+			);
+			path = Gift;
+			sourceTree = "<group>";
+		};
+		B23BA2311F7798040020DF46 /* WalkThrough */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = WalkThrough;
+			sourceTree = "<group>";
+		};
+		BED207C4649FFAED12A42E7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68E3AB5436543C808B4804EB /* Pods-BoozeNation.debug.xcconfig */,
+				4F4E5456AE4977FC28D5C0C2 /* Pods-BoozeNation.release.xcconfig */,
+				CFA4CF40089F2560FB6ADB92 /* Pods-BoozeNationTests.debug.xcconfig */,
+				69175AF9C72F0EEE819B1CC3 /* Pods-BoozeNationTests.release.xcconfig */,
+				80A25358CCF23402601C4BDD /* Pods-BoozeNationUITests.debug.xcconfig */,
+				9397429A1E8BE2E3F3947AD3 /* Pods-BoozeNationUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		004B25041F4DA77900BD3FF7 /* BoozeNation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 004B252D1F4DA77900BD3FF7 /* Build configuration list for PBXNativeTarget "BoozeNation" */;
+			buildPhases = (
+				E615FDE07A20E15D406C257A /* [CP] Check Pods Manifest.lock */,
+				004B25011F4DA77900BD3FF7 /* Sources */,
+				004B25021F4DA77900BD3FF7 /* Frameworks */,
+				004B25031F4DA77900BD3FF7 /* Resources */,
+				998957A6F6AFF7E3491219DB /* [CP] Embed Pods Frameworks */,
+				B3913440DD06035152CC0A53 /* [CP] Copy Pods Resources */,
+				0880FA211FF683CC00264C8B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoozeNation;
+			productName = BoozeNation;
+			productReference = 004B25051F4DA77900BD3FF7 /* BoozeNation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		004B25181F4DA77900BD3FF7 /* BoozeNationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 004B25301F4DA77900BD3FF7 /* Build configuration list for PBXNativeTarget "BoozeNationTests" */;
+			buildPhases = (
+				D3A0F5B9518247F889602DDD /* [CP] Check Pods Manifest.lock */,
+				004B25151F4DA77900BD3FF7 /* Sources */,
+				004B25161F4DA77900BD3FF7 /* Frameworks */,
+				004B25171F4DA77900BD3FF7 /* Resources */,
+				6ABEF574C9853D454F34F61B /* [CP] Embed Pods Frameworks */,
+				6EBAE85D95BEE3D8843A26C7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				004B251B1F4DA77900BD3FF7 /* PBXTargetDependency */,
+			);
+			name = BoozeNationTests;
+			productName = BoozeNationTests;
+			productReference = 004B25191F4DA77900BD3FF7 /* BoozeNationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		004B25231F4DA77900BD3FF7 /* BoozeNationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 004B25331F4DA77900BD3FF7 /* Build configuration list for PBXNativeTarget "BoozeNationUITests" */;
+			buildPhases = (
+				394A26D8838DD60907C3F58B /* [CP] Check Pods Manifest.lock */,
+				004B25201F4DA77900BD3FF7 /* Sources */,
+				004B25211F4DA77900BD3FF7 /* Frameworks */,
+				004B25221F4DA77900BD3FF7 /* Resources */,
+				B2B796F7C9B051D425D4C899 /* [CP] Embed Pods Frameworks */,
+				FA6E37F3A77D3E5085561E77 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				004B25261F4DA77900BD3FF7 /* PBXTargetDependency */,
+			);
+			name = BoozeNationUITests;
+			productName = BoozeNationUITests;
+			productReference = 004B25241F4DA77900BD3FF7 /* BoozeNationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		004B24FD1F4DA77900BD3FF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Abhishek Chaudhary";
+				TargetAttributes = {
+					004B25041F4DA77900BD3FF7 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5Z9378QUFU;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					004B25181F4DA77900BD3FF7 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = BXJMU6MAWM;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 004B25041F4DA77900BD3FF7;
+					};
+					004B25231F4DA77900BD3FF7 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = BXJMU6MAWM;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 004B25041F4DA77900BD3FF7;
+					};
+				};
+			};
+			buildConfigurationList = 004B25001F4DA77900BD3FF7 /* Build configuration list for PBXProject "BoozeNation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 004B24FC1F4DA77900BD3FF7;
+			productRefGroup = 004B25061F4DA77900BD3FF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				004B25041F4DA77900BD3FF7 /* BoozeNation */,
+				004B25181F4DA77900BD3FF7 /* BoozeNationTests */,
+				004B25231F4DA77900BD3FF7 /* BoozeNationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		004B25031F4DA77900BD3FF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				089F27CA1F751BD300B7D4DD /* addToCart.xib in Resources */,
+				08BF6ED11F52054500D0A5AD /* img.jpg in Resources */,
+				08B973051F573DA300ADAF31 /* GoogleService-Info.plist in Resources */,
+				B23BA23E1F7798D90020DF46 /* tuto2.png in Resources */,
+				089922E11F4DC7E900FC9492 /* cocktail.png in Resources */,
+				08B0D10A1FCC2DC500FECE5A /* event_transaction.png in Resources */,
+				089922E81F4DC7E900FC9492 /* wine.png in Resources */,
+				08745D28202F606E00479EFF /* PUCBImages.xcassets in Resources */,
+				089922D91F4DC7E900FC9492 /* ic_menu.png in Resources */,
+				08745D2C202F606E00479EFF /* PUCBHeaderView.xib in Resources */,
+				0030A1F71F500A73006CA8F9 /* checked.png in Resources */,
+				089922D11F4DC7E900FC9492 /* chivasregal-whiskey.jpg in Resources */,
+				004B25131F4DA77900BD3FF7 /* LaunchScreen.storyboard in Resources */,
+				464F46E51FA506C300F05395 /* Spinner.xib in Resources */,
+				0030A2011F5029FF006CA8F9 /* dotuncheck.png in Resources */,
+				08745D22202F606E00479EFF /* PUCBUserIdNB.xib in Resources */,
+				089922D31F4DC7E900FC9492 /* ic_account_circle_black_24dp.png in Resources */,
+				0030A2021F5029FF006CA8F9 /* dotcheck.png in Resources */,
+				089922EA1F4DC7F700FC9492 /* Main.storyboard in Resources */,
+				089922E61F4DC7E900FC9492 /* vodka.png in Resources */,
+				089922C71F4DC7E900FC9492 /* 100pipers-whiskey.jpg in Resources */,
+				004B25101F4DA77900BD3FF7 /* Assets.xcassets in Resources */,
+				467F0FDD1FB6376F00AC7A80 /* InternetReachability.xib in Resources */,
+				46AC92C41FBCB6DA00C15730 /* Gift.xib in Resources */,
+				08745D2E202F606E00479EFF /* PUCBRegenerateOTPView.xib in Resources */,
+				089922DA1F4DC7E900FC9492 /* ic_phone_android_black_24dp.png in Resources */,
+				089922DC1F4DC7E900FC9492 /* ic_pubs.png in Resources */,
+				08745D3D202F606E00479EFF /* PUUIAssets.xcassets in Resources */,
+				089922DE1F4DC7E900FC9492 /* jacobcreek-wine.jpg in Resources */,
+				089922D81F4DC7E900FC9492 /* ic_lock_black_24dp.png in Resources */,
+				089922E71F4DC7E900FC9492 /* whiskey.png in Resources */,
+				08F75B991F4F007600B17A71 /* beerFloatButton.png in Resources */,
+				089922CA1F4DC7E900FC9492 /* beer.png in Resources */,
+				089922C91F4DC7E900FC9492 /* banner_1.jpg in Resources */,
+				08745D21202F606E00479EFF /* PUCBFooterView.xib in Resources */,
+				08F75B971F4EFFFE00B17A71 /* upload_YXlnlK-medium.png in Resources */,
+				08745D2D202F606E00479EFF /* PUCBSurePay.xib in Resources */,
+				089922E31F4DC7E900FC9492 /* rum.png in Resources */,
+				08745D1F202F606E00479EFF /* PUCBApproveView.xib in Resources */,
+				08745D2A202F606E00479EFF /* PUCBBankPageLoading.xib in Resources */,
+				08745D4C202F606E00479EFF /* PayUSDKInfo.plist in Resources */,
+				00F6AFE71F911B0300236B3A /* source.gif in Resources */,
+				08745D29202F606E00479EFF /* PUCBLoader.xib in Resources */,
+				08745D39202F606E00479EFF /* PUUITabBarTopView.xib in Resources */,
+				089922CF1F4DC7E900FC9492 /* bz_logo.png in Resources */,
+				089922CE1F4DC7E900FC9492 /* budweiser.png in Resources */,
+				B23BA2401F7798D90020DF46 /* tuto4.png in Resources */,
+				B23BA23F1F7798D90020DF46 /* newtuto3.png in Resources */,
+				08745D30202F606E00479EFF /* PUUIMainStoryBoard.storyboard in Resources */,
+				08745D42202F606E00479EFF /* PUUIStoredCardView.xib in Resources */,
+				089922D61F4DC7E900FC9492 /* ic_email_black_24dp.png in Resources */,
+				B23BA2411F7798D90020DF46 /* tutorial_body_full.png in Resources */,
+				089922E01F4DC7E900FC9492 /* lit.jpg in Resources */,
+				08745D27202F606E00479EFF /* PUCBROCell.xib in Resources */,
+				089922D41F4DC7E900FC9492 /* ic_add_circle_outline_black.png in Resources */,
+				08B0D1061FCC1B4D00FECE5A /* mocktails.png in Resources */,
+				089922D21F4DC7E900FC9492 /* heineken.png in Resources */,
+				08745D23202F606E00479EFF /* PayUCBInfo.plist in Resources */,
+				009CD50B1FFBAF7900DF7106 /* GiftSendViewController.xib in Resources */,
+				08745D24202F606E00479EFF /* PUCBRegisterOption.xib in Resources */,
+				00A1263C1F4FE3850039869A /* signingoogle.png in Resources */,
+				089922E21F4DC7E900FC9492 /* oldmonk.jpg in Resources */,
+				08745D3F202F606E00479EFF /* PUUIEMITopView.xib in Resources */,
+				089922D01F4DC7E900FC9492 /* captainmorgan.png in Resources */,
+				08745D26202F606E00479EFF /* PUCBAllPaymentOption.xib in Resources */,
+				089922D71F4DC7E900FC9492 /* ic_home_black_24dp.png in Resources */,
+				08BF6ED31F52BD6500D0A5AD /* unchecked.png in Resources */,
+				089922CB1F4DC7E900FC9492 /* Bira.jpg in Resources */,
+				089922CC1F4DC7E900FC9492 /* blackdog-whiskey.jpg in Resources */,
+				08745D25202F606E00479EFF /* PUCBReviewOrderView.xib in Resources */,
+				089922DF1F4DC7E900FC9492 /* kingfisher.jpg in Resources */,
+				B23BA23D1F7798D90020DF46 /* tuto1.png in Resources */,
+				08745D2B202F606E00479EFF /* PUCBPasswordNB.xib in Resources */,
+				08745D20202F606E00479EFF /* PUCBPassowrdWithIncorrectOTPView.xib in Resources */,
+				089922DD1F4DC7E900FC9492 /* ic_remove_circle_outline_black.png in Resources */,
+				08745D2F202F606E00479EFF /* PUCBWKTest.html in Resources */,
+				089922DB1F4DC7E900FC9492 /* ic_profile.png in Resources */,
+				089922C81F4DC7E900FC9492 /* absolut-vodka.png in Resources */,
+				089922E41F4DC7E900FC9492 /* smirnoff-vodka.png in Resources */,
+				00847C651F52139D00DE36C0 /* addSlider.xib in Resources */,
+				089922D51F4DC7E900FC9492 /* ic_bar.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004B25171F4DA77900BD3FF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004B25221F4DA77900BD3FF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		394A26D8838DD60907C3F58B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoozeNationUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6ABEF574C9853D454F34F61B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoozeNationTests/Pods-BoozeNationTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EBAE85D95BEE3D8843A26C7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoozeNationTests/Pods-BoozeNationTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		998957A6F6AFF7E3491219DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BoozeNation/Pods-BoozeNation-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Canvas/Canvas.framework",
+				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftGifOrigin/SwiftGifOrigin.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Canvas.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGifOrigin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoozeNation/Pods-BoozeNation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2B796F7C9B051D425D4C899 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoozeNationUITests/Pods-BoozeNationUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3913440DD06035152CC0A53 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BoozeNation/Pods-BoozeNation-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoozeNation/Pods-BoozeNation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3A0F5B9518247F889602DDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoozeNationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E615FDE07A20E15D406C257A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoozeNation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA6E37F3A77D3E5085561E77 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoozeNationUITests/Pods-BoozeNationUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		004B25011F4DA77900BD3FF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A1263E1F4FE5C40039869A /* loginViewController.swift in Sources */,
+				08745D49202F606E00479EFF /* PUUIReachability.m in Sources */,
+				08745D3A202F606E00479EFF /* PUUINBVC.m in Sources */,
+				08745D38202F606E00479EFF /* PUUIPaymentOptionVC.m in Sources */,
+				B2904A031F91FA8000244E70 /* HelpAndSupportViewController.swift in Sources */,
+				B255B33D1F4EBF9E00D5F3C8 /* PubsViewController.swift in Sources */,
+				00A6CAD51F7E2F7E0001DAAC /* CartViewController.swift in Sources */,
+				08027F55202DC6CF00E1D493 /* WalkThroughCollectionViewCell.swift in Sources */,
+				08745D36202F606E00479EFF /* PUUIWebViewVC.m in Sources */,
+				4624C34F1FB89AA900CB8693 /* Alerts.swift in Sources */,
+				08745D3E202F606E00479EFF /* PUUIStoredCardView.m in Sources */,
+				08745D33202F606E00479EFF /* PUUIBaseVC.m in Sources */,
+				08745D40202F606E00479EFF /* PUUINBTopView.m in Sources */,
+				00847C671F5213AC00DE36C0 /* ShelfSlider.swift in Sources */,
+				464F46E41FA506C300F05395 /* Spinner.swift in Sources */,
+				089922F01F4DC81800FC9492 /* BoozeNation.xcdatamodel in Sources */,
+				0030A2221F507724006CA8F9 /* HomeViewController.swift in Sources */,
+				B29049FD1F91FA6700244E70 /* AppPreferenceViewController.swift in Sources */,
+				08745D41202F606E00479EFF /* PUUIEMITopView.m in Sources */,
+				B2A083241FB87253004457A5 /* RedeemOrderViewController.swift in Sources */,
+				08745D47202F606E00479EFF /* KHTabPagerViewController.m in Sources */,
+				08745D3B202F606E00479EFF /* PUUIPayUMoneyVC.m in Sources */,
+				009CD5091FFBAF7900DF7106 /* GiftSendViewController.swift in Sources */,
+				08745D3C202F606E00479EFF /* PUUIStoredCardCarouselVC.m in Sources */,
+				003C71B71F8D527100C4C761 /* MenuSlider.swift in Sources */,
+				08027F59202DC71600E1D493 /* UPCarouselFlowLayout.swift in Sources */,
+				B29049FB1F91FA5700244E70 /* DesignableUITextFieldViewController.swift in Sources */,
+				08745D4A202F606E00479EFF /* UIColor+PUUIColor.m in Sources */,
+				B29049FF1F91FA7200244E70 /* AboutUsViewController.swift in Sources */,
+				08745D32202F606E00479EFF /* PUUICCDCVC.m in Sources */,
+				08745D43202F606E00479EFF /* iCarousel.m in Sources */,
+				004B25091F4DA77900BD3FF7 /* AppDelegate.swift in Sources */,
+				08745D31202F606E00479EFF /* iOSDefaultActivityIndicator.m in Sources */,
+				08745D37202F606E00479EFF /* PUUICardOptionVC.m in Sources */,
+				089922EC1F4DC80D00FC9492 /* ShelfViewController.swift in Sources */,
+				08745D48202F606E00479EFF /* KHTabScrollView.m in Sources */,
+				08BF6ECF1F52048A00D0A5AD /* ProfileViewController.swift in Sources */,
+				4624C34D1FB89A9E00CB8693 /* SweetAlert.swift in Sources */,
+				08745D45202F606E00479EFF /* PUUIImageConstants.m in Sources */,
+				46AC92C31FBCB6DA00C15730 /* Gift.swift in Sources */,
+				08027F54202DC6CF00E1D493 /* WalkThroughViewController.swift in Sources */,
+				0030A1FA1F500C83006CA8F9 /* UpdateProfileViewController.swift in Sources */,
+				08745D44202F606E00479EFF /* PUUIConstants.m in Sources */,
+				08745D46202F606E00479EFF /* PUUIUtility.m in Sources */,
+				B2A083261FB87274004457A5 /* RedeemOrderfromPubsViewController.swift in Sources */,
+				08027F47202C683200E1D493 /* TransactionDetail.swift in Sources */,
+				B2904A051F91FA9100244E70 /* TransactionHistoryViewController.swift in Sources */,
+				089922EE1F4DC81300FC9492 /* MenuViewController.swift in Sources */,
+				08745D34202F606E00479EFF /* PUUIWrapperKHTabPagerVC.m in Sources */,
+				08745CA2202F601D00479EFF /* FinalPayU.swift in Sources */,
+				46CED8C11FB6420F00D42E8A /* Reachability.swift in Sources */,
+				467F0FDC1FB6376F00AC7A80 /* InternetReachability.swift in Sources */,
+				08745D35202F606E00479EFF /* PUUITabBarTopView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004B25151F4DA77900BD3FF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004B251E1F4DA77900BD3FF7 /* BoozeNationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004B25201F4DA77900BD3FF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004B25291F4DA77900BD3FF7 /* BoozeNationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		004B251B1F4DA77900BD3FF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 004B25041F4DA77900BD3FF7 /* BoozeNation */;
+			targetProxy = 004B251A1F4DA77900BD3FF7 /* PBXContainerItemProxy */;
+		};
+		004B25261F4DA77900BD3FF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 004B25041F4DA77900BD3FF7 /* BoozeNation */;
+			targetProxy = 004B25251F4DA77900BD3FF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		004B25111F4DA77900BD3FF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				004B25121F4DA77900BD3FF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		004B252B1F4DA77900BD3FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		004B252C1F4DA77900BD3FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		004B252E1F4DA77900BD3FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68E3AB5436543C808B4804EB /* Pods-BoozeNation.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = BoozeNation/BoozeNation.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Z9378QUFU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PayU",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = BoozeNation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)/Users/starlord/Desktop/newRepo/BoozeNation/PayU_coreSDK_Swift.framework",
+					"$(PROJECT_DIR)/BoozeNation/PayU/SDK",
+					"$(PROJECT_DIR)/BoozeNation/PayU",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.starlord.BoozeNation12;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BoozeNation/BoozeNation-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		004B252F1F4DA77900BD3FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F4E5456AE4977FC28D5C0C2 /* Pods-BoozeNation.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = BoozeNation/BoozeNation.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Z9378QUFU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PayU",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = BoozeNation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)/Users/starlord/Desktop/newRepo/BoozeNation/PayU_coreSDK_Swift.framework",
+					"$(PROJECT_DIR)/BoozeNation/PayU/SDK",
+					"$(PROJECT_DIR)/BoozeNation/PayU",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.starlord.BoozeNation12;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BoozeNation/BoozeNation-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		004B25311F4DA77900BD3FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFA4CF40089F2560FB6ADB92 /* Pods-BoozeNationTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BXJMU6MAWM;
+				INFOPLIST_FILE = BoozeNationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.atlas.BoozeNationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoozeNation.app/BoozeNation";
+			};
+			name = Debug;
+		};
+		004B25321F4DA77900BD3FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69175AF9C72F0EEE819B1CC3 /* Pods-BoozeNationTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BXJMU6MAWM;
+				INFOPLIST_FILE = BoozeNationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.atlas.BoozeNationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoozeNation.app/BoozeNation";
+			};
+			name = Release;
+		};
+		004B25341F4DA77900BD3FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80A25358CCF23402601C4BDD /* Pods-BoozeNationUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = BXJMU6MAWM;
+				INFOPLIST_FILE = BoozeNationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.atlas.BoozeNationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = BoozeNation;
+			};
+			name = Debug;
+		};
+		004B25351F4DA77900BD3FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9397429A1E8BE2E3F3947AD3 /* Pods-BoozeNationUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = BXJMU6MAWM;
+				INFOPLIST_FILE = BoozeNationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.atlas.BoozeNationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = BoozeNation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		004B25001F4DA77900BD3FF7 /* Build configuration list for PBXProject "BoozeNation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004B252B1F4DA77900BD3FF7 /* Debug */,
+				004B252C1F4DA77900BD3FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		004B252D1F4DA77900BD3FF7 /* Build configuration list for PBXNativeTarget "BoozeNation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004B252E1F4DA77900BD3FF7 /* Debug */,
+				004B252F1F4DA77900BD3FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		004B25301F4DA77900BD3FF7 /* Build configuration list for PBXNativeTarget "BoozeNationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004B25311F4DA77900BD3FF7 /* Debug */,
+				004B25321F4DA77900BD3FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		004B25331F4DA77900BD3FF7 /* Build configuration list for PBXNativeTarget "BoozeNationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004B25341F4DA77900BD3FF7 /* Debug */,
+				004B25351F4DA77900BD3FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 004B24FD1F4DA77900BD3FF7 /* Project object */;
+}

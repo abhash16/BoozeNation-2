@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="Qy9-nP-pVB" customClass="GiftSendViewController" customModule="BoozeNation" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="7wF-B9-y9W">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <searchBar contentMode="redraw" text="" placeholder="Search Giftee Phone Number" translatesAutoresizingMaskIntoConstraints="NO" id="H7w-t7-y0u">
+                        <rect key="frame" x="8" y="45" width="359" height="56"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="hRG-oN-c6h"/>
+                        </constraints>
+                        <color key="tintColor" red="0.92941176469999998" green="0.41176470590000003" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.92941176470588238" green="0.41176470588235292" blue="0.023529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textInputTraits key="textInputTraits" textContentType="tel"/>
+                        <scopeButtonTitles>
+                            <string>Title</string>
+                            <string>Title</string>
+                        </scopeButtonTitles>
+                        <connections>
+                            <outlet property="delegate" destination="Qy9-nP-pVB" id="ZZy-U6-Dh8"/>
+                        </connections>
+                    </searchBar>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="poL-D1-D7x">
+                        <rect key="frame" x="8" y="110" width="359" height="48"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Giftee Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JcR-N7-uOW">
+                                <rect key="frame" x="4" y="4" width="94" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.93786555530000004" green="0.42415112259999999" blue="0.0016528852279999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Abhash Kumar Singh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88Z-22-n89">
+                                <rect key="frame" x="100" y="4" width="240" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.93786555530000004" green="0.42415112259999999" blue="0.0016528852279999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="nationbooze@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03K-lR-6A9">
+                                <rect key="frame" x="100" y="25" width="240" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.93786555530000004" green="0.42415112259999999" blue="0.0016528852279999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Giftee Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEu-nG-U3A">
+                                <rect key="frame" x="4" y="25" width="94" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.93786555530000004" green="0.42415112259999999" blue="0.0016528852279999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="1cu-db-oae"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xfo-y2-qzT">
+                        <rect key="frame" x="8" y="166" width="359" height="203"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gift_card_rounded" translatesAutoresizingMaskIntoConstraints="NO" id="Mke-gA-1Im">
+                                <rect key="frame" x="8" y="8" width="343" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heineken.png" translatesAutoresizingMaskIntoConstraints="NO" id="2r2-Wz-QQ3">
+                                <rect key="frame" x="32" y="29" width="64" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Heineken Beer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9t-QK-7Yz">
+                                <rect key="frame" x="103" y="25" width="209" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 Pint (330 ml)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSf-Xe-JDr">
+                                <rect key="frame" x="103" y="44" width="209" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Gift Card Value:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruu-el-S2p">
+                                <rect key="frame" x="103" y="64" width="140" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="250" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eii-ve-h3v">
+                                <rect key="frame" x="240" y="64" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Only Redeemable In Delhi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9C-ig-0ax">
+                                <rect key="frame" x="103" y="82" width="209" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93786555530000004" green="0.42415112259999999" blue="0.0016528852279999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="203" id="BJR-BE-dXH"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fa-wB-ayA">
+                        <rect key="frame" x="6" y="625" width="362" height="39"/>
+                        <color key="backgroundColor" red="0.95355003238341973" green="0.31063619936650871" blue="0.43158537083408743" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="39" id="25q-9y-D4e"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                        <state key="normal" title="SEND GIFT CARD">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="sendTheGift:" destination="Qy9-nP-pVB" eventType="touchUpInside" id="y3Z-BX-Ex3"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2Z-xi-3IE">
+                        <rect key="frame" x="6" y="20" width="46" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="I5Z-0h-FDN"/>
+                            <constraint firstAttribute="height" constant="21" id="J0n-i2-kh1"/>
+                        </constraints>
+                        <state key="normal" title="&lt;Back"/>
+                        <connections>
+                            <action selector="_backAction:" destination="Qy9-nP-pVB" eventType="touchUpInside" id="WM4-H1-w6n"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.95355003238341973" green="0.95355003238341973" blue="0.95355003238341973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="cd0-ev-ALz" firstAttribute="bottom" secondItem="1fa-wB-ayA" secondAttribute="bottom" constant="3" id="7bA-Io-XoZ"/>
+                    <constraint firstItem="d2Z-xi-3IE" firstAttribute="top" secondItem="cd0-ev-ALz" secondAttribute="top" id="Ahq-B3-SGV"/>
+                    <constraint firstItem="1fa-wB-ayA" firstAttribute="leading" secondItem="cd0-ev-ALz" secondAttribute="leading" constant="6" id="D63-U0-fHo"/>
+                    <constraint firstItem="poL-D1-D7x" firstAttribute="leading" secondItem="cd0-ev-ALz" secondAttribute="leading" constant="8" id="FrR-vk-ARq"/>
+                    <constraint firstItem="cd0-ev-ALz" firstAttribute="trailing" secondItem="poL-D1-D7x" secondAttribute="trailing" constant="8" id="KbS-mW-IGS"/>
+                    <constraint firstItem="H7w-t7-y0u" firstAttribute="leading" secondItem="cd0-ev-ALz" secondAttribute="leading" constant="8" id="PRM-D5-v3u"/>
+                    <constraint firstItem="H7w-t7-y0u" firstAttribute="top" secondItem="d2Z-xi-3IE" secondAttribute="bottom" constant="4" id="PdU-kh-XXn"/>
+                    <constraint firstItem="d2Z-xi-3IE" firstAttribute="leading" secondItem="cd0-ev-ALz" secondAttribute="leading" constant="6" id="Ryc-0b-okW"/>
+                    <constraint firstItem="cd0-ev-ALz" firstAttribute="trailing" secondItem="1fa-wB-ayA" secondAttribute="trailing" constant="7" id="TZH-kP-TFC"/>
+                    <constraint firstItem="cd0-ev-ALz" firstAttribute="trailing" secondItem="Xfo-y2-qzT" secondAttribute="trailing" constant="8" id="WjV-V6-qbr"/>
+                    <constraint firstItem="cd0-ev-ALz" firstAttribute="trailing" secondItem="H7w-t7-y0u" secondAttribute="trailing" constant="8" id="bUU-zn-VSo"/>
+                    <constraint firstItem="Xfo-y2-qzT" firstAttribute="top" secondItem="poL-D1-D7x" secondAttribute="bottom" constant="8" id="bpX-Fg-Bph"/>
+                    <constraint firstItem="Xfo-y2-qzT" firstAttribute="leading" secondItem="cd0-ev-ALz" secondAttribute="leading" constant="8" id="flt-j7-gSR"/>
+                    <constraint firstItem="poL-D1-D7x" firstAttribute="top" secondItem="H7w-t7-y0u" secondAttribute="bottom" constant="9" id="mH0-hO-nN2"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="cd0-ev-ALz"/>
+            </view>
+            <connections>
+                <outlet property="_backButton" destination="d2Z-xi-3IE" id="MtS-3O-mKf"/>
+                <outlet property="_brandImage" destination="2r2-Wz-QQ3" id="F0u-Oz-dRz"/>
+                <outlet property="_brandName" destination="I9t-QK-7Yz" id="gfT-u0-gAU"/>
+                <outlet property="_city" destination="E9C-ig-0ax" id="up1-0f-uQ7"/>
+                <outlet property="_gifteeEmail" destination="03K-lR-6A9" id="nDM-Gx-n3E"/>
+                <outlet property="_gifteeName" destination="88Z-22-n89" id="MBc-cz-5rb"/>
+                <outlet property="_height" destination="1cu-db-oae" id="QH8-ev-aUv"/>
+                <outlet property="_quantity" destination="LSf-Xe-JDr" id="jrf-7L-T9P"/>
+                <outlet property="_searchBarGiftee" destination="H7w-t7-y0u" id="T9C-XO-KxM"/>
+                <outlet property="_topSpace" destination="bpX-Fg-Bph" id="h2N-Wd-6WR"/>
+                <outlet property="_totalGiftCardValue" destination="eii-ve-h3v" id="DvY-sc-sjP"/>
+            </connections>
+            <point key="canvasLocation" x="370.5" y="221.5"/>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="gift_card_rounded" width="518" height="318"/>
+        <image name="heineken.png" width="256" height="256"/>
+    </resources>
+</document>
