@@ -38,7 +38,12 @@ class GiftSendViewController: UIViewController, UISearchBarDelegate {
         
     }
     
-    
+    override func viewDidAppear(_ animated: Bool) {
+        _brandImage.sd_setImage(with: URL(string:"\(selectedShelfDaaru["drinkThumbnail"]!)"))
+        _quantity.text="\(quantityToRedeem) \(selectedShelfDaaru["drinkMeasure"]!)"
+        _totalGiftCardValue.text="\(quantityToRedeem * Int("\(selectedShelfDaaru["drinkPrice"]!)")!)"
+        _city.text="Only Redeemable In \(selectedShelfDaaru["drinkCity"]!)"
+    }
     
     var giftTakingUser=[String:Any]()
 
@@ -77,7 +82,7 @@ class GiftSendViewController: UIViewController, UISearchBarDelegate {
         let pid = Database.database().reference().child("user_queue").child(UID).child("user_transactions").child("transaction_detail").childByAutoId()
         
         if isUserFound{
-            _ = SweetAlert().showAlert("Send Gift Card", subTitle: "You are gifting \(selectedShelfDaaru["drinkQuantity"]!) \(selectedShelfDaaru["drinkName"]!) To \(self.giftTakingUser["fullName"] as! String)", style: AlertStyle.customImag(imageFile: "tuto3.png"), buttonTitle:"Cancel", buttonColor:UIColor.colorFromRGB(0xD0D0D0) , otherButtonTitle:  "Gift", otherButtonColor: UIColor.colorFromRGB(0xDD6B55)) { (isOtherButton) -> Void in
+            _ = SweetAlert().showAlert("Send Gift Card", subTitle: "You are gifting \(quantityToRedeem) \(selectedShelfDaaru["drinkName"]!) To \(self.giftTakingUser["fullName"] as! String)", style: AlertStyle.customImag(imageFile: "tuto3.png"), buttonTitle:"Cancel", buttonColor:UIColor.colorFromRGB(0xD0D0D0) , otherButtonTitle:  "Gift", otherButtonColor: UIColor.colorFromRGB(0xDD6B55)) { (isOtherButton) -> Void in
                 if isOtherButton == true {
                     
                     print("Cancel Button  Pressed", terminator: "")
@@ -88,7 +93,7 @@ class GiftSendViewController: UIViewController, UISearchBarDelegate {
         
         [
         
-        "drinkQuantity":selectedShelfDaaru["drinkQuantity"]!,
+        "drinkQuantity":quantityToRedeem,
         "drinkCategory":selectedShelfDaaru["drinkCategory"]!,
         "drinkCity":selectedShelfDaaru["drinkCity"]!,
         "drinkMeasure":selectedShelfDaaru["drinkMeasure"]!,
@@ -137,7 +142,8 @@ class GiftSendViewController: UIViewController, UISearchBarDelegate {
                     ])
                 spinnerView.removeSelf(completition: {
                 _ = SweetAlert().showAlert("Success", subTitle: "Hurray Gift Sent!", style: AlertStyle.success)
-
+                    self.dismiss(animated: true, completion: {
+                    })
                 })
             }
     }

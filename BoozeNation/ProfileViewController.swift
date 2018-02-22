@@ -125,7 +125,9 @@ class ProfileViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-
+    override func viewDidAppear(_ animated: Bool) {
+        profiletableview.reloadData()
+    }
         
         
     
@@ -161,6 +163,8 @@ extension ProfileViewController : UITableViewDelegate,UITableViewDataSource{
             cell.signoutbuttn.layer.masksToBounds = true
             
             cell.profileEmailId.text=UserDefaults.standard.object(forKey: "email") as! String
+           
+            cell.profileBoozeCredit.text="\(UserDefaults.standard.value(forKey: "bnCredits")!) Booze Nation Credit"
             cell.profileName.text=UserDefaults.standard.object(forKey: "name")as! String
             if UserDefaults.standard.object(forKey: "sex")as! String == "Male"{
                 cell.profilepic.image=UIImage(named: "gender_male.png")

@@ -1,11 +1,9 @@
-    //
 //  MenuViewController.swift
 //  BoozeNation
 //
 //  Created by Starlord on 23/08/17.
 //  Copyright © 2017 Starlord. All rights reserved.
 //
-
 import UIKit
 import FirebaseCore
 import FirebaseDatabase
@@ -156,6 +154,7 @@ class MenuViewController: UIViewController,UICollectionViewDataSource,UICollecti
         
         self.mainDaaruNames.removeAll()
         Database.database().reference().child("drinks_menu").child("\(CurrentCityLocation)").child("\(currentStripItem)").observe(.childAdded){(snapshot:DataSnapshot) in
+
             var dict = [String:Any]()
             dict = snapshot.value as! [String:Any]
             self.mainDaaruNames.append(dict)
@@ -204,7 +203,7 @@ func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection s
         }
             else{
                 
-                //loader gets hidden here :::::::::::::::::::::::::::::::::::
+                //loader gets hidden here :::::::::::::::::::::::::::::::::::::
                 if mainDaaruNames.count != 0 {
                     
                    // self.leloIMAGE.isHidden=true

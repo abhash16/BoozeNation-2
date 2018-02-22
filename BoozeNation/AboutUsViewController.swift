@@ -9,6 +9,15 @@
 import UIKit
 
 class AboutUsViewController: UIViewController {
+    @IBAction func privacyPolicyBtn(_ sender: Any) {
+        openLink(urlString:"http://boozenation.in/app/privacy_policy.htm")
+    }
+
+    @IBAction func termsOfServiceBtn(_ sender: Any) {
+      openLink(urlString: "http://boozenation.in/app/tos.html")
+        }
+    
+
     @IBAction func faceBookAction(_ sender: Any) {
         facebookURL()
     }
@@ -44,4 +53,21 @@ class AboutUsViewController: UIViewController {
     }
     */
 
+}
+
+extension UIViewController{
+    
+    func openLink(urlString: String){
+        let showViewController = UIViewController()
+        self.navigationController?.pushViewController(showViewController, animated: true)
+    
+        let webView = UIWebView()
+        webView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+        showViewController.view.addSubview(webView)
+      webView.loadRequest(URLRequest(url: URL(string: urlString)!))
+        
+    }
+    
+    
+    
 }

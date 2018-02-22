@@ -106,7 +106,14 @@ var whichbutton:Int = 0
         self.shelfDetailsArray.removeAll()
         self.normalDrinksArray.removeAll()
         self.specialsAndEventsArray.removeAll()
-        Database.database().reference().child("userbar").child("\(UID)").child("\(CurrentCityLocation)").observeSingleEvent(of: .value, with:{ snapshot in
+        Database.database().reference().child("userbar").child("\(UID)").child("\(CurrentCityLocation)").observe(.value, with: { (snapshot) in
+            
+            
+            self.myShelfValue=0
+            self.shelfDetailsArray.removeAll()
+            self.normalDrinksArray.removeAll()
+            self.specialsAndEventsArray.removeAll()
+            
             self.imageView.removeFromSuperview()
             var dictionary=[String:Any]()
             if snapshot.exists(){
@@ -289,7 +296,7 @@ var whichbutton:Int = 0
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        if isCartEmpty == false{
+        if isRedeemCartEmpty == false{
             showCartNotifier()
         }
     }

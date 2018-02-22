@@ -9,7 +9,7 @@
 import UIKit
 import DropDown
 import Firebase
-import MaterialComponents.MaterialFeatureHighlight
+
 var shelfFlag=0
 var selectedShelfDaaru=[String:Any]()
 var quantityToRedeem = 1
@@ -26,7 +26,7 @@ class ShelfSlider:UIViewController{
         let userdefault = UserDefaults.standard
         let featureHighlighted = userdefault.bool(forKey: "featureHighlight1")
         if !featureHighlighted {
-            self.showFeatures()
+           // self.showFeatures()
             
         }}
     
@@ -45,7 +45,8 @@ class ShelfSlider:UIViewController{
         
     }
     override func viewDidLoad() {
-        
+        let notificationName = NSNotification.Name("removeShelf")
+        NotificationCenter.default.addObserver(self, selector: #selector(remove), name: notificationName, object: nil)
         
         //addSliderdownView.addToCartButton.addTarget(self, action: #selector(showloading), for: .touchUpInside)
         addSliderdownView.giftButton.addTarget(self, action: #selector(showGiftSender), for: .touchUpInside)
@@ -67,7 +68,7 @@ class ShelfSlider:UIViewController{
     func addSlider(){
         
         
-        if let window = self.view {
+        if let window = UIApplication.shared.keyWindow {
             if whichbutton == 1{
                 addSliderdownView.giftButton.isHidden = true
                 addSliderdownView.CashoutButton.isHidden = true
@@ -100,8 +101,8 @@ class ShelfSlider:UIViewController{
             
             print("\(selectedShelfDaaru["drinkThumbnail"]!)")
             addSliderdownView.daaruImage.sd_setImage(with: URL(string:"\(selectedShelfDaaru["drinkThumbnail"]!)"))
-            view.addSubview(addSliderdownView)     //
-            
+           // view.addSubview(addSliderdownView)     //
+            window.addSubview(addSliderdownView)
             UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
                 //self.view.alpha = 0.1
                 
@@ -157,9 +158,11 @@ class ShelfSlider:UIViewController{
 //custom class::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 class addSliderView:UIView{
     var trick = 0
-    
+    var mytrick="0"
     
     @IBAction func doCashout(_ sender: Any) {
+       
+        mytrick="0"
         Database.database().reference().child("usertransaction_status").child(UID).child("cashout_transaction").removeValue()
         
         _ = SweetAlert().showAlert("Cash Out Drink", subTitle: "Drink price will be refunded to your Booze Nation wallet in the form of Booze Nation Credits. You can use available Booze Nation credits to buy any other drink from our menu. You want yo continue ?", style: AlertStyle.customImag(imageFile: "beer.png"), buttonTitle:"Cancel", buttonColor:UIColor.colorFromRGB(0xD0D0D0) , otherButtonTitle:  "Cash out", otherButtonColor: UIColor.colorFromRGB(0x69B2FB)) { (isOtherButton) -> Void in
@@ -201,6 +204,7 @@ class addSliderView:UIView{
                             print(pid.key)
                             let oId = pid.key.substring(from:pid.key.index(pid.key.endIndex, offsetBy: -6))
                             
+                            
                             Database.database().reference().child("user_queue").child("\(UID)").child("user_transactions").child("transaction_overview").child(pid.key).setValue([
                                 "order_id":"\(oId.uppercased())",
                                 "transaction_city":"Quantity \(quantityToRedeem)",
@@ -228,53 +232,54 @@ class addSliderView:UIView{
 //                                        })
                                         
                                         
+                                        print("\nupper")
+                                        var dict = [String:Any]()
                                         
-                                        Database.database().reference().child("usertransaction_status").child(UID).child("cashout_transaction").observe(.value, with:{ snapshot in
-                                            
-                                            var dict = snapshot.value as? [String:Any]
-                                            
-                                            if snapshot.exists() && "\(dict!["status"]!)" == "success" {
+ Database.database().reference().child("usertransaction_status").child(UID).child("cashout_transaction").observe(.value, with:{ snapshot in
+    
+    var dict = snapshot.value as? [String:Any]
+    if snapshot.exists(){
+        
+        if "\(dict!["status"]!)" == "success"{
+            
+            if self.mytrick != "success"{
+                self.mytrick="success"
+                Database.database().reference().child("usertransaction_status").child(UID).child("cashout_transaction").removeValue()
+                
+                print("\nsuccccccccceeeeessssssss\n");
+                
+                
+                spinnerView.removeSelf(completition: {})
+                _=SweetAlert().showAlert("Cash Out Successful", subTitle: "Booze Nation credits will be added to your Booze Nation wallet shortly", style: .success)
+                
+                
+                
+                
+                let notificationName = NSNotification.Name("removeShelf");NotificationCenter.default.post(name: notificationName, object: nil)
+                
+            }
+        }
+        else if "\(dict!["status"])"=="failure"{
+            
+            if self.mytrick != "failure"{
+                self.mytrick="failure"
+                
+                spinnerView.removeSelf(completition: {})
+                
+                _ = SweetAlert().showAlert("Uh-Oh!", subTitle: "Transaction failed ", style: AlertStyle.error)
+                
+                Database.database().reference().child("usertransaction_status").child(UID).child("cashout_transaction").removeValue()
+                let notificationName = NSNotification.Name("removeShelf");NotificationCenter.default.post(name: notificationName, object: nil)
+                
+            }
+        }
+    }
+    
                                                 
-                                                spinnerView.removeSelf(completition: {
-                                                    _ = SweetAlert().showAlert("Cash Out Successful", subTitle: "Booze Nation credits will be added to your Booze Nation wallet shortly", style: AlertStyle.success, buttonTitle: "OK", action: { (gaand) in
-                                                        
-                                                        Database.database().reference().child("usertransaction_status").child(UID).child("cashout_transaction").removeValue()
-                                                        
-                                                    })
-                                                    
-                                                })
-                                                
-                                                
-                                                
-                                                
-                                            }
-                                                
-                                            else if snapshot.exists() && "\(dict!["status"]!)" == "failed" {
-                                                
-                                                spinnerView.removeSelf(completition: {
-                                                    _ = SweetAlert().showAlert("Uh-Oh!", subTitle: "Transaction failed \(dict!["reason"]!)", style: AlertStyle.error)
-                                                    
-                                                    Database.database().reference().child("usertransaction_status").child(UID).child("cashout_transaction").removeValue()
-                                                    
-                                                    
-                                                })
-                                                
-                                                
-                                                
-                                                
-                                            }
-                                            
-                                            
-                                            
-                                            
-                                            
+    
+                                           
                                         })
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
+                                      
                                         
                                     }
                             }
@@ -316,40 +321,28 @@ class addSliderView:UIView{
                 if snapshot.exists() && self.trick==0 && "\(dict!["status"]!)" == "success" {
                     
                     self.trick=1
-                    spinnerView.removeSelf(completition: {
-                        _ = SweetAlert().showAlert("Cheers", subTitle: "Booze Added To Order", style: AlertStyle.success, buttonTitle: "OK", action: { (gaand) in
-                            
+                    spinnerView.removeSelf(completition: { })
+                     let notificationName = NSNotification.Name("removeShelf");NotificationCenter.default.post(name: notificationName, object: nil)
+                     //   _ = SweetAlert().showAlert("Cheers", subTitle: "Booze Added To Order", style: AlertStyle.success)
+                        
+                let window = UIApplication.shared.keyWindow
+                    window?.showToast(message: "Drinks added to redeem cart")
                             Database.database().reference().child("usertransaction_status").child(UID).child("addToRedeem").removeValue()
                             
-                        })
-                        
-                    })
-                    
-                   
-                    
-                    
+                
                 }
                     
                 else if snapshot.exists() && self.trick==0 && "\(dict!["status"]!)" == "failed" {
                     
                     self.trick=1
-                    spinnerView.removeSelf(completition: {
-                        _ = SweetAlert().showAlert("Cheers", subTitle: "Booze Added To Order", style: AlertStyle.success)
+                    spinnerView.removeSelf(completition: {})
+                        _ = SweetAlert().showAlert("Uh-OH", subTitle: "Booze Adding Failed!!", style: AlertStyle.error)
                         
                         Database.database().reference().child("usertransaction_status").child(UID).child("addToRedeem").removeValue()
                         
-                        
-                    })
-                    
                    
-                    
-                    
                 }
-                
-                
-                
-                
-                
+               
             })
             
         }else{
@@ -371,9 +364,9 @@ class addSliderView:UIView{
                 if snapshot.exists() && self.trick==0 && "\(dict!["status"]!)" == "success" {
                     
                     self.trick=1
-                    spinnerView.removeSelf(completition: {
+                    spinnerView.removeSelf(completition: { })
                         _ = SweetAlert().showAlert("Cheers", subTitle: "Booze Added To Order", style: AlertStyle.success)
-                    })
+                   
                     
                     Database.database().reference().child("usertransaction_status").child(UID).child("specialToRedeem").removeValue()
                     
@@ -384,9 +377,9 @@ class addSliderView:UIView{
                 else if snapshot.exists() && self.trick==0 && "\(dict!["status"]!)" == "failed" {
                     
                     self.trick=1
-                    spinnerView.removeSelf(completition: {
-                        _ = SweetAlert().showAlert("Cheers", subTitle: "Booze Added To Order", style: AlertStyle.success)
-                    })
+                    spinnerView.removeSelf(completition: {})
+                        _ = SweetAlert().showAlert("Uh-Oh", subTitle: "Booze Can't Be Added", style: AlertStyle.error)
+                    
                     
                     Database.database().reference().child("usertransaction_status").child(UID).child("specialToRedeem").removeValue()
                     
@@ -519,38 +512,5 @@ extension ShelfSlider {
         }
     }
     
-    func showFeatures(){
-        shelfFlag=1
-        
-        let completion2 = {(accepted: Bool) in
-            let highlightController2 = MDCFeatureHighlightViewController(highlightedView: self.addSliderdownView.addToCartButton, completion: nil)
-            highlightController2.titleText = "Build Your Order"
-            highlightController2.bodyText = "Want to Order drinks on your Shelf at a Pub? Just add drinks you want to order. When done goto Pubs Screen and Order. Simple enough"
-            highlightController2.outerHighlightColor =
-                UIColor.orange.withAlphaComponent(kMDCFeatureHighlightOuterHighlightAlpha)
-            self.present(highlightController2, animated: true, completion: {
-                let userdefault1 = UserDefaults.standard
-                userdefault1.set(true, forKey: "featureHighlight1")
-                
-            })
-        }
-        
-        
-        let completion1 = {(accepted: Bool) in
-            let highlightController1 = MDCFeatureHighlightViewController(highlightedView: self.addSliderdownView.CashoutButton, completion: completion2)
-            highlightController1.titleText = "Exchange Drinks"
-            highlightController1.bodyText = "Pub dosen't have a drink you own abd want to order? we got you covered. CashOutany drink on your shelf and buy something else using Booze Nation Credits At No Extra  Charge."
-            highlightController1.outerHighlightColor =
-                UIColor.orange.withAlphaComponent(kMDCFeatureHighlightOuterHighlightAlpha)
-            self.present(highlightController1, animated: true, completion:nil)
-        }
-        
-        let highlightController = MDCFeatureHighlightViewController(highlightedView: self.addSliderdownView.giftButton, completion: completion1)
-        highlightController.titleText = "Booze Nation Gift Cards"
-        highlightController.bodyText = "Gift drinks to your friends. They will be notified immediately and can order that drink at any Booze Nation Partner Pub."
-        highlightController.outerHighlightColor =
-            UIColor.orange.withAlphaComponent(kMDCFeatureHighlightOuterHighlightAlpha)
-        self.present(highlightController, animated: true, completion:nil)
-    }
-    
+   
 }

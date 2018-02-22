@@ -25,19 +25,20 @@ class Gift: UIViewController {
         super.viewDidLoad()
         let notificationNme = NSNotification.Name("Notification_GiftClose")
         NotificationCenter.default.addObserver(self, selector: #selector(removeSelf), name: notificationNme, object: nil)
-        _friendName.text = "From \(friendName)"
-        _daaruname.text = "\(daaruname)"
-        _daaruQuantity.text = "\(daaruQuantity)"
-        _totalGiftValue.text = "Total Gift Value: Rs \(totalGiftValue)"
-        _reedemableCity.text = "Only Redeemable In \(redeemableCity)"
+        _friendName.text = friendName
+        _daaruname.text = daaruname
+        _daaruQuantity.text = daaruQuantity
+        _totalGiftValue.text = totalGiftValue
+        _reedemableCity.text = redeemableCity
     }
 func showGiftCard(friendName:String,daaruname:String,daaruQuantity:String,totalGiftValue:String,redeemableCity:String){
         if let window = UIApplication.shared.keyWindow{
             self.friendName =  friendName
             self.daaruname = daaruname
+            print(daaruname)
             self.daaruQuantity = daaruQuantity
-            self.totalGiftValue = totalGiftValue
-            self.redeemableCity = redeemableCity
+            self.totalGiftValue = "Total Gift Value : Rs \(totalGiftValue)"
+            self.redeemableCity = "Only Redeemable in  \(redeemableCity)"
             self.view.backgroundColor = UIColor(white: 0.2, alpha: 0.4)
             self.view.frame = CGRect(x: 0, y: 0, width: window.frame.width, height: window.frame.height)
             window.addSubview(self.view)

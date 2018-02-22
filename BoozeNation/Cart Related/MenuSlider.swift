@@ -9,7 +9,7 @@
 import UIKit
 import DropDown
 import Firebase
-import MaterialComponents.MaterialFeatureHighlight
+
 var menuFlag=0
 
 private let spinner = SpinnerView()
@@ -82,7 +82,7 @@ class MenuSlider:UIViewController,UITextFieldDelegate{
         let userdefault = UserDefaults.standard
         let featureHighlighted = userdefault.bool(forKey: "featureHighlight")
         if !featureHighlighted {
-        featureHighlights()
+      
         }
     }
         override func viewDidLoad() {
@@ -110,7 +110,7 @@ func addSlider(){
                 addCartdownView.frame = CGRect(x: 0, y: window.frame.height, width: window.frame.width, height: window.frame.height)
                 addCartdownView.addGestureRecognizer(downSwipe)
            addCartdownView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dd)))
-                view.addSubview(addCartdownView)
+                window.addSubview(addCartdownView)
                 
                 UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
                     
@@ -178,13 +178,13 @@ func addSlider(){
             if snapshot.exists() && self.trick==0 && "\(dict!["status"]!)" == "success" {
                 
                 self.trick=1
-                spinnerView.removeSelf(completition: {
+                spinnerView.removeSelf(completition: {  })
                     self.remove2()
                     self.presentingViewController?.showToast(message: "Drink Added To Cart")
                    // _ = SweetAlert().showAlert("Done", subTitle: "Drinks Added To Cart", style: AlertStyle.success)
                     
                     
-                })
+              
           
                 Database.database().reference().child("usertransaction_status").child(UID).child("addToCart").removeValue()
                 
@@ -212,18 +212,7 @@ func addSlider(){
     }
  
     
-func featureHighlights(){
-        
-        menuFlag=1
-      let highlightController = MDCFeatureHighlightViewController(highlightedView: self.addCartdownView._addtoCartButton, completion: nil)
-        highlightController.titleText = "Measure Selector"
-        highlightController.bodyText = "Tap to Choose from Pint, Bottle or Pitcher for Beer's, Large or Small from Whisky's, you catch the drift"
-         highlightController.outerHighlightColor =
-        UIColor.orange.withAlphaComponent(kMDCFeatureHighlightOuterHighlightAlpha)
-    self.present(highlightController, animated: true, completion:{    let userdefault = UserDefaults.standard
-        userdefault.set(true, forKey: "featureHighlight")}
-    )
-}
+
     
     
     //loading data from the database.:::::::::::::::::::::::::::::::::::::::::::::::::

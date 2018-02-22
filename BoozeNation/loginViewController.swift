@@ -53,6 +53,12 @@ class loginViewController: UIViewController,GIDSignInUIDelegate ,GIDSignInDelega
     @IBOutlet weak var signupBtn: UIButton!
     @IBOutlet weak var emailTxtField: UITextField!
     @IBOutlet weak var passwordTxtField: UITextField!
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = false
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         startReachability()
@@ -112,6 +118,7 @@ GIDSignIn.sharedInstance().delegate=self
     @IBAction func checkmarkBtn(_ sender: Any) {
         if isChecked == false{
             let checkedimage = #imageLiteral(resourceName: "ic_check_box")
+            openLink(urlString: "http://boozenation.in/app/tos.html")
             let tintedImage = checkedimage.withRenderingMode(.alwaysTemplate)
             checkBtn.tintColor = UIColor.orange
             checkBtn.setImage(tintedImage, for: .normal)
@@ -175,7 +182,7 @@ GIDSignIn.sharedInstance().delegate=self
                 spinnerView.removeSelf(completition: {
                     
                 })
-                
+            
                 let str=error.localizedDescription
                 
                 let mySubstring = str.prefix(23)
@@ -191,7 +198,6 @@ GIDSignIn.sharedInstance().delegate=self
             }
             
             UID=user!.uid
-            
             UserDefaults.standard.set(UID, forKey: "uid")
             UserDefaults.standard.synchronize()
             
@@ -242,7 +248,6 @@ GIDSignIn.sharedInstance().delegate=self
                     spinnerView.removeSelf(completition: {
                         
                     })
-                    
                     let str=error?.localizedDescription
                     print(str)
                     let mySubstring = str!.prefix(23)

@@ -965,7 +965,7 @@
 				TargetAttributes = {
 					004B25041F4DA77900BD3FF7 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 5Z9378QUFU;
+						DevelopmentTeam = 62XUV4UP63;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -1504,7 +1504,7 @@
 				CODE_SIGN_ENTITLEMENTS = BoozeNation/BoozeNation.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5Z9378QUFU;
+				DEVELOPMENT_TEAM = 62XUV4UP63;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PayU",
@@ -1518,7 +1518,7 @@
 					"$(PROJECT_DIR)/BoozeNation/PayU/SDK",
 					"$(PROJECT_DIR)/BoozeNation/PayU",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.starlord.BoozeNation12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.starlord.BoozeNation1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "BoozeNation/BoozeNation-Bridging-Header.h";
@@ -1536,7 +1536,7 @@
 				CODE_SIGN_ENTITLEMENTS = BoozeNation/BoozeNation.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5Z9378QUFU;
+				DEVELOPMENT_TEAM = 62XUV4UP63;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PayU",
@@ -1550,7 +1550,7 @@
 					"$(PROJECT_DIR)/BoozeNation/PayU/SDK",
 					"$(PROJECT_DIR)/BoozeNation/PayU",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.starlord.BoozeNation12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.starlord.BoozeNation1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "BoozeNation/BoozeNation-Bridging-Header.h";

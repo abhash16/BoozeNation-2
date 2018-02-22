@@ -24,16 +24,60 @@ class HomeViewController: UIViewController,UIScrollViewDelegate,UITableViewDeleg
     @IBAction func changeLocation(_ sender: Any) {
         self.snakbarcitydikhao()
     }
+    
+    func giftChecker(){
+        
+        Database.database().reference().child("user_gift").child(UID).child("gift").observe(.value, with: { (snapshot) in
+        
+           print(snapshot.value)
+            guard let dict = snapshot.value as? [String:Any] else{return}
+            for item in dict{
+                guard let a=item.value as? [String:Any] else{return}
+                print(a["drinkName"]! as! String)
+                giftView.showGiftCard(friendName: a["gifterName"]! as! String, daaruname: a["drinkName"]! as! String, daaruQuantity: "\(a["drinkQuantity"]!) \(a["drinkMeasure"]!)", totalGiftValue: "\(a["cartTotalPrice"]!)", redeemableCity: a["drinkCity"]! as! String)
+            }
+            Database.database().reference().child("user_gift").child(UID).child("gift").removeValue()
+
+          
+        })
+        
+    }
+    
+    
     override func viewWillAppear(_ animated: Bool) {
+        
+        
+      
+        
         let notificationNme = NSNotification.Name("NotificationIdf")
         NotificationCenter.default.addObserver(self, selector: #selector(HomeViewController.changeTab), name: notificationNme, object: nil)
     }
+    
+    func boozyCredits(){
+        
+        Database.database().reference().child("user_finance").child(UID).child("bnBalance").observe(.value, with: { (snapshot) in
+            
+            print(snapshot.value as! IntMax)
+            UserDefaults.standard.set((snapshot.value as! IntMax), forKey: "bnCredits")
+            
+        })
+        
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        giftChecker()
+    //giftView.showGiftCard(friendName: "CFDataGet", daaruname: "nk", daaruQuantity: "njk", totalGiftValue: "NL", redeemableCity: "dsfef")
+    
+    }
+    
+    
     override func viewDidLoad() {
        contentTableview.estimatedRowHeight = 320
         contentTableview.rowHeight = UITableViewAutomaticDimension
         super.viewDidLoad()
         carousel.addSubview(_pageControl)
-       
+       boozyCredits()
         loadImagesFromDatabase()
         carousel.type = .linear
         carousel.isScrollEnabled=true

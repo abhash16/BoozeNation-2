@@ -144,16 +144,20 @@ class UpdateProfileViewController: UIViewController,UITextFieldDelegate,UIPicker
     func calcAge(birthday: String) -> Int {
         let dateFormater = DateFormatter()
         dateFormater.dateFormat = "yyyy/MM/dd"
-        let birthdayDate = dateFormater.date(from: birthday)
+        if let birthdayDate = dateFormater.date(from: birthday){
         print(birthdayDate)
         let calendar: NSCalendar! = NSCalendar(calendarIdentifier: .gregorian)
         let now = Date()
          today = dateFormater.string(from: now)
-        let calcAge = calendar.components(.year, from: birthdayDate!, to: now, options: [])
         
-        let age = calcAge.year
+        let calcAge = (calendar.components(.year, from: birthdayDate, to: now, options: [])as? DateComponents)
+     
+            let age = calcAge?.year
         print(age)
         return age!
+        }else{
+            return -404
+        }
     }
     
     
@@ -173,16 +177,19 @@ class UpdateProfileViewController: UIViewController,UITextFieldDelegate,UIPicker
             
         }
         else{
-            
-            if calcAge(birthday: _birthdayTxtField.text!) < 25{
-                
+           let usageAge=calcAge(birthday: _birthdayTxtField.text!)
+            if usageAge < 25{
+                if usageAge==(-404){
+                 self.displayMyAlertMessage(userMessage: "Wrong date format!!")
+                }else{
                 self.displayMyAlertMessage(userMessage: "You are below the legal age")
+                }
 
             }
             else if let a=UserDefaults.standard.value(forKey: "phone"){
                 
                 if UserDefaults.standard.value(forKey: "phone")as! String == _mobileTxtField.text!{
-                
+            UID=UserDefaults.standard.value(forKey: "uid")as! String
             UserDefaults.standard.set(_nameTxtField.text!, forKey: "name")
             UserDefaults.standard.set(_cityTxtField.text, forKey: "city")
             UserDefaults.standard.set(_mobileTxtField.text, forKey: "phone")
@@ -216,6 +223,7 @@ class UpdateProfileViewController: UIViewController,UITextFieldDelegate,UIPicker
         ]
         )
                 
+                    
                 self.performSegue(withIdentifier: "profileUpdater", sender: self)
 
                 }else{
@@ -248,7 +256,6 @@ class UpdateProfileViewController: UIViewController,UITextFieldDelegate,UIPicker
         }else{
         
         do{
-            
             try Auth.auth().signOut()
             
             UserDefaults.standard.removeObject(forKey: "uid")
@@ -387,7 +394,7 @@ class UpdateProfileViewController: UIViewController,UITextFieldDelegate,UIPicker
         _otpTextField.addSubview(orangeLine)
         self.aView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
         self.aView.backgroundColor = UIColor.black.withAlphaComponent(0.5)
-        self.view.addSubview(self.aView)
+        UIApplication.shared.keyWindow?.addSubview(self.aView)
         UIView.animate(withDuration: 0.5, animations: {
             self.otpView.frame = CGRect(x: 0, y: (self.view.frame.height-self.otpView.frame.height), width: self.view.frame.width, height: self.otpView.frame.height)
             self.aView.addSubview(self.otpView)

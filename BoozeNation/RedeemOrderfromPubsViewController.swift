@@ -242,9 +242,11 @@ class RedeemOrderfromPubsViewController: UIViewController,UITableViewDelegate,UI
     }
     
     
+  var mytrick="0"
     
-    
-
+    override func viewDidAppear(_ animated: Bool) {
+        mytrick="0"
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -296,6 +298,10 @@ class RedeemOrderfromPubsViewController: UIViewController,UITableViewDelegate,UI
                         
                         if "\(dict!["status"]!)" == "success"{
                             
+                            if self.mytrick != "success"{
+                                self.mytrick="success"
+                                _=SweetAlert().showAlert("Order Redeemed", subTitle: "Please enjoy!!", style: .success)
+                                
                             Database.database().reference().child("usertransaction_status").child(UID).child("removeFromRedeem").removeAllObservers()
                             redeemCartTotalValue -= Int("\(self.orderDetailsArray[indexPath.row]["cartTotalPrice"]!)")!
                             
@@ -314,12 +320,18 @@ class RedeemOrderfromPubsViewController: UIViewController,UITableViewDelegate,UI
                                 tableView.reloadData()
                             }
                             spinnerView.removeSelf(completition: {})
+                            }
+                        }else if "\(dict!["status"]!)" == "failure"{
                             
-                        }else{
+                            
+                            if self.mytrick != "failure"{
+                                self.mytrick="failure"
+                                
                             
                             spinnerView.removeSelf(completition: {})
-                            
-                            
+                                _=SweetAlert().showAlert("Uh-Oh", subTitle: "Transaction failed", style: .error)
+                                
+                            }
                         }
                         
                         

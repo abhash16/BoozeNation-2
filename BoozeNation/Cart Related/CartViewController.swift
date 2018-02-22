@@ -26,10 +26,25 @@ class CartViewController: UIViewController , UITableViewDataSource, UITableViewD
 
     @IBOutlet weak var _totalCartValueLabel: UILabel!
     @IBOutlet weak var _BNCreditsLabel: UILabel!
+    @IBOutlet weak var _payBtnOutlet: UIButton!
     @IBAction func TaptoPay(_ sender: Any) {
         
         _totalValueinCIView.text="\(price)"
-        _payAmountInCiVIew.text="\(price)"
+        _boozeNationCredits.text="\((UserDefaults.standard.value(forKey: "bnCredits") as! Int))"
+        
+        if ((UserDefaults.standard.value(forKey: "bnCredits") as! Int)>=price){
+         creditsTobeUsed=price
+            price=0
+            _remainingBZCredits.text="\((UserDefaults.standard.value(forKey: "bnCredits") as! Int)-creditsTobeUsed)"
+            _payAmountInCiVIew.text="\(price)"
+
+        }else{
+           creditsTobeUsed=(UserDefaults.standard.value(forKey: "bnCredits") as! Int)
+            price=price-creditsTobeUsed
+            _remainingBZCredits.text="0"
+            _payAmountInCiVIew.text="\(price)"
+
+        }
         
         self.view.addSubview(aView)
         self.view.addSubview(checkInView)
@@ -45,18 +60,18 @@ class CartViewController: UIViewController , UITableViewDataSource, UITableViewD
     }
     
     let emptyView=UIImageView()
- 
-    override func viewWillAppear(_ animated: Bool) {
-        loadMyCart()
-
-    }
+ var mytrick="0"
     
+    override func viewWillAppear(_ animated: Bool) {
+        checkInView.removeFromSuperview() ; aView.removeFromSuperview()
+        _payBtnOutlet.isUserInteractionEnabled = true
+         _BNCreditsLabel.text="\(UserDefaults.standard.value(forKey: "bnCredits")!)"
+        //removeCheckInView()
+        loadMyCart()
+       mytrick="0"
+    }
+    var creditsTobeUsed=0
     func boozeNationDbPayment(){
-        
-        
-        
-        Database.database().reference().child("user_queue").removeValue()
-        
         Database.database().reference().child("usertransaction_status").child(UID).child("Purchase").removeValue()
         
         spinnerView.showSpinner(ttitle: "Initiating Purchase", text: "Please Be Patient...")
@@ -78,44 +93,72 @@ class CartViewController: UIViewController , UITableViewDataSource, UITableViewD
         print(oId)
         print("lolo")
         
-        pid.setValue(["order_id":"\(oId.uppercased())","transactionUID":"\(UID)","transaction_bzcredits":"0" ,"transaction_city":"\(CurrentCityLocation)","transaction_date":"\(todaysDate)","transaction_pub":"BoozeNation","transaction_pushkey":"\(pid.key)","transaction_sort":tSorter ,"transaction_type":"purchase","transaction_value":self.price ]) { (error, snap) in
+        pid.setValue(["order_id":"\(oId.uppercased())","transactionUID":"\(UID)","transaction_bzcredits":"\(creditsTobeUsed)" ,"transaction_city":"\(CurrentCityLocation)","transaction_date":"\(todaysDate)","transaction_pub":"BoozeNation","transaction_pushkey":"\(pid.key)","transaction_sort":tSorter ,"transaction_type":"purchase","transaction_value":self.price ]) { (error, snap) in
+            
             
 Database.database().reference().child("usertransaction_status").child(UID).child("Purchase").observe(.value, with:{ snapshot in
                 
                 var dict = snapshot.value as? [String:Any]
                 if snapshot.exists(){
                     if "\(dict!["status"]!)" == "success"{
+                        
+                        if self.mytrick != "success"{
+                       self.mytrick="success"
+                            Database.database().reference().child("usertransaction_status").child(UID).child("Purchase").removeValue()
                         cartDetailsArray.removeAll()
                         self.mytabeView.reloadData()
-                        Database.database().reference().child("usertransaction_status").child(UID).child("Purchase").removeAllObservers()
-                        spinnerView.removeSelf(completition: {
-                            _ = SweetAlert().showAlert("Cheers", subTitle: "Booze Added To Your Bar", style: AlertStyle.success, buttonTitle: "OK", action: { (gaand) in
-                            Database.database().reference().child("usertransaction_status").child(UID).child("Purchase").removeValue()
-                                self.navigationController?.popViewController(animated: true)
-                                
+                        
+                        print("\nsuccccccccceeeeessssssss\n");
                             
+                            Database.database().reference().child("usertransaction_status").child(UID).child("Purchase").removeAllObservers()
+                            spinnerView.removeSelf(completition: {
+                                _ = SweetAlert().showAlert("Cheers", subTitle: "Booze Added To Your Bar", style: AlertStyle.success, buttonTitle: "OK", action: { (gaand) in
+                                    
+                                    self.navigationController?.popToRootViewController(animated: true)
+                                    
+                                })
                                 
                             })
-                        })
-                    }
-                    else{
+                            
+                            
                         
+                        }
+                    }
+                    else  if "\(dict!["status"]!)" == "failure"{
+                        
+                        
+                        if self.mytrick != "failure"{
+                            self.mytrick="failure"
+                            Database.database().reference().child("usertransaction_status").child(UID).child("Purchase").removeValue()
+                            cartDetailsArray.removeAll()
+                            self.mytabeView.reloadData()
+                            
+                            print("\nfailllllll\n");
+                            
+                            Database.database().reference().child("usertransaction_status").child(UID).child("Purchase").removeAllObservers()
+                            spinnerView.removeSelf(completition: {
+                                _ = SweetAlert().showAlert("Uh-Oh", subTitle: "\(dict!["reason"]!)", style: AlertStyle.error, buttonTitle: "OK", action: { (gaand) in
+                                    
+                                    self.navigationController?.popToRootViewController(animated: true)
+                                    
+                                })
+                                
+                            })
+                            
+                            
+                            
+                        }
                         
                     }
                 }
-                
-                
-                
-
-                
-                
+    
                 self.removeCheckInView()
             })
             
         }
         
     }
-    
+    var trickTextField=UITextField()
     //PayU starts here:::::::::::::
     func convertToDictionary(text: String) -> [String: Any]? {
         if let data = text.data(using: .utf8) {
@@ -138,33 +181,25 @@ Database.database().reference().child("usertransaction_status").child(UID).child
         
        
         
-        if let dict=convertToDictionary(text: notification.object as! String){
-            print("\(dict)\n\n\n\n")
-
-            if(dict["status"]! as! String) == "success"{
-         
-            tabBarController?.selectedIndex=1
+        if let dict11=convertToDictionary(text: notification.object as! String){
+            print("\(dict11)\n\n\n\n")
             
+            NotificationCenter.default.removeObserver(self)
+
+            if(dict11["status"]! as! String) == "success"{
+         
            // removeCheckInView()
             boozeNationDbPayment()
            
         }else{
          
-            if let viewControllers: [UIViewController] = self.navigationController!.viewControllers as [UIViewController]{
-                self.navigationController!.popToViewController(viewControllers[viewControllers.count - 3], animated: true)
-                
+           
                 _ = SweetAlert().showAlert("payment Failed", subTitle: "Please try again!", style: AlertStyle.error, buttonTitle: "OK", action: { (gaand) in
-                    
-                    self.navigationController?.popViewController(animated: true)
-                    
-                    
-                    
+                   
                 })
                 
-                
-            }else{
-                print("error thrown")
-            }
+             self.navigationController?.popToRootViewController(animated: true)
+           
             
             }
             
@@ -268,8 +303,16 @@ Database.database().reference().child("usertransaction_status").child(UID).child
     
 
     @IBAction func payBtnCIView(_ sender: Any) {
+        _payBtnOutlet.isUserInteractionEnabled = false
+        if price==0{
+          boozeNationDbPayment()
+        }else{
+            
+    NotificationCenter.default.addObserver(self, selector: #selector(CartViewController.responseReceived(notification:)), name: NSNotification.Name(rawValue: kPUUINotiPaymentResponse), object: nil)
+            
+            
         payUOptionStock()
-     // boozeNationDbPayment()
+        }
     }
     
     
@@ -287,6 +330,7 @@ Database.database().reference().child("usertransaction_status").child(UID).child
     
     
     func removeCheckInView(){
+        
         checkInView.removeFromSuperview() ; aView.removeFromSuperview()
         
         loadMyCart()
@@ -327,8 +371,7 @@ Database.database().reference().child("usertransaction_status").child(UID).child
         super.viewDidLoad()
    
      //payu
-        NotificationCenter.default.addObserver(self, selector: #selector(CartViewController.responseReceived(notification:)), name: NSNotification.Name(rawValue: kPUUINotiPaymentResponse), object: nil)
-        
+
         
         
          let CIHeight = checkInView.frame.height
@@ -407,15 +450,17 @@ let handle = Database.database().reference().child("usertransaction_status").chi
         spinnerView.removeSelf(completition: {})
 
         
-//Database.database().reference().child("usertransaction_status").child(UID).child("removefromusercart").removeValue()
+Database.database().reference().child("usertransaction_status").child(UID).child("removefromusercart").removeValue()
         }
       
       else if "\(dict!["status"]!)" == "failed" {
         
        spinnerView.removeSelf(completition: {})
        
-//         _ = SweetAlert().showAlert("Uh-Oh", subTitle: "Booze Added To Order", style: AlertStyle.success)
+        
         self.showToast(message: "\(dict!["reason"]!)")
+        Database.database().reference().child("usertransaction_status").child(UID).child("removefromusercart").removeValue()
+
         
         }
 

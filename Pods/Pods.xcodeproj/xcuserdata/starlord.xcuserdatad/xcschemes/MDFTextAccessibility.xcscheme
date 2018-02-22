@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '10FB8B0DAB7BBC4395C301119A2E17AF'
+               BlueprintIdentifier = '9CF35571C14DF0E7316C087FC60BE9DF'
                BlueprintName = 'MDFTextAccessibility'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'MDFTextAccessibility.framework'>
